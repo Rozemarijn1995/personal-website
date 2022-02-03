@@ -6,26 +6,25 @@
 main:
   - name: Home
     url: '#about'
-    weight: 10
+    weight: 1
   - name: Bio
     url: '#bio'
-    weight: 20
+    weight: 2
   - name: Research
-    url: '#Research'
-    weight: 30
+    url: '#research'
+    weight: 3
   - name: Publications
-    url: '#Publications'
-    weight: 40
+    url: '#publication'
+    weight: 4
   - name: Outreach
     url: '#outreach'
-    weight: 50
+    weight: 5
   - name: Podcast Politicologica
     url: '#podcast'
-    weight: 60
+    weight: 6
   - name: Contact
     url: '#contact'
-    weight: 70
-
+    weight: 7
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
