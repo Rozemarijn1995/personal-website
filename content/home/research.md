@@ -5,7 +5,7 @@ title: Research
 subtitle: ''
 widget: blank
 headless: true
-weight: 5
+weight: 3
 design:
   columns: '1'
   background: {}
@@ -16,3 +16,6 @@ advanced:
 ---
 
 Under construction
+## Dissertation project
+
+## Other projects
