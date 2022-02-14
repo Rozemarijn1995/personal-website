@@ -41,7 +41,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: rozemarijn.vandijk@uantwerpen.be
+  link: 'mailto:rozemarijn.vandijk@uantwerpen.be'
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/rozemarijnvdijk
