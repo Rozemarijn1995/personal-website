@@ -15,7 +15,8 @@ advanced:
   css_class: ''
 ---
 
-Under construction
 ## Dissertation project
+
+
 
 ## Other projects
