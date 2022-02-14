@@ -1,70 +1,39 @@
-+++
+---
+date: '2022-02-02T00:00:00'
+draft: false
+title: Podcast Politicologica
+subtitle: ''
+widget: blank
+headless: true
+weight: 5
+design:
+  columns: '1'
+  background: {}
+  spacing: {}
+advanced:
+  css_style: ''
+  css_class: ''
+---
 
-# This section displays recent talks from `content/podcast/`.
 
-widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
-weight = 65  # Order that this section will appear.
+![screen reader text](coverpodcast.jpg)
 
-title = "Podcast Politicologica"
-subtitle = ""
 
-[content]
-  page_type = "talk"
-  
-  # Choose how much pages you would like to display (0 = all pages)
-  count = 0
-  
-  # Choose how many pages you would like to offset by
-  offset = 0
+Together with my colleague [Samira Azabar](https://www.uantwerpen.be/nl/personeel/samira-azabar/), I produce the Dutch podcast Politicologica. In this podcast we speak with colleagues from our department about their research. We want to show that social science research is more than publishing academic papers and that  research can help everyone understand how politics works. You can find the show on [Spotify](https://open.spotify.com/show/5Zcl08yq5dCD9lnIjATF5x?si=0b3efd3db92943fc), [Soundcloud](https://soundcloud.com/user-299897290) and [Apple Podcast](https://podcasts.apple.com/be/podcast/podcast-politicologica/id1570392842). Soon you can download  the .mp3 files and the (Dutch) show notes of the episodes on this website too. In case you have any questions about the podcast, feel free contact us on politicologica@gmail.com. 
 
-  # Page order. Descending (desc) or ascending (asc) date.
-  order = "desc"
 
-  # Filter posts by a taxonomy term.
-  [content.filters]
-    tag = ""
-    category = ""
-    publication_type = ""
-    exclude_featured = false
-    exclude_past = false
-    exclude_future = false
-    
-[design]
-  # Toggle between the various page layout types.
-  #   1 = List
-  #   2 = Compact
-  #   3 = Card
-  #   4 = Citation (publication only)
-  view = 1
-  
-[design.background]
-  # Apply a background color, gradient, or image.
-  #   Uncomment (by removing `#`) an option to apply it.
-  #   Choose a light or dark text color by setting `text_color_light`.
-  #   Any HTML color name or Hex value is valid.
+## Episodes 
 
-  # Background color.
-  # color = "navy"
-  
-  # Background gradient.
-  # gradient_start = "DeepSkyBlue"
-  # gradient_end = "SkyBlue"
-  
-  # Background image.
-  # image = "background.jpg"  # Name of image in `static/img/`.
-  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
-
-  # Text color (true=light or false=dark).
-  # text_color_light = true  
-  
-[advanced]
- # Custom CSS. 
- css_style = ""
- 
- # CSS class.
- css_class = ""
-
-+++
+### Aflevering 6. 
+[Zijn vox pops de echte stem van het volk?](https://soundcloud.com/user-299897290/aflevering-6-zijn-vox-pops-de-echte-stem-van-het-volk')
+### Aflevering 5.
+[Worden journalisten gedreven door jouw data?](https://soundcloud.com/user-299897290/aflevering-5-hoe-gebruiken-journalisten-data)
+### Aflevering 4.
+[Conflict en beleid. Zonder wrijving geen glans?](https://soundcloud.com/user-299897290/aflevering-4-conflict-en-beleid-zonder-wrijving-geen-glans)
+### Aflevering 3. 
+[Wiens belang vertegenwoordigen lobbyisten?](https://soundcloud.com/user-299897290/aflevering-3-wiens-belang-vertegenwoordigen-lobbyisten)
+### Aflevering 2. 
+[Corona in het nieuws](https://soundcloud.com/user-299897290/aflevering-2-corona-in-het-nieuws)
+### Aflevering 1. 
+[Social media als campagnetool: een vloek of een zegen?](https://soundcloud.com/user-299897290/aflevering-1-social-media-als-campagnetool-een-vloek-of-een-zegen)
 
