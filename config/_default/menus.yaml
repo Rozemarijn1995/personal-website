@@ -17,7 +17,7 @@ main:
     url: '#publication'
     weight: 4
   - name: Outreach
-    url: '#Outreach'
+    url: '#outreach.md'
     weight: 5
   - name: Podcast Politicologica
     url: '#podcast'
