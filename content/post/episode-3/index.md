@@ -46,7 +46,7 @@ categories:
 
 ### Shownotes
 
-Luister op [Spotify](https://open.spotify.com/episode/1irpcng3Iv4kroWGgyKIg1?si=S5SId8fySkmiHt2qIJ92EA), [Soundcloud](https://soundcloud.com/user-299897290/aflevering-4-conflict-en-beleid-zonder-wrijving-geen-glans) of [Apple Podcast](https://podcasts.apple.com/be/podcast/aflevering-4-conflict-en-beleid-zonder-wrijving-geen-glans/id1570392842?i=1000537026441).
+Luister op [Spotify](https://open.spotify.com/episode/4NxihFlbPDfRVD7bTyEASL?si=raV4vjk9RGGxqrUwKYCbFg), [Soundcloud](https://soundcloud.com/user-299897290/aflevering-3-wiens-belang-vertegenwoordigen-lobbyisten) of [Apple Podcast](https://podcasts.apple.com/be/podcast/aflevering-3-wiens-belang-vertegenwoordigen-lobbyisten/id1570392842?i=1000527292582).
 
 Wil je meer weten over de onderwerpen die we hebben besproken? We hebben een overzichtje gemaakt van de interessante content die voorbijkwam:
 
