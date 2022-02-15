@@ -20,7 +20,7 @@ main:
     url: '#outreach'
     weight: 5
   - name: Podcast Politicologica
-    url: '#podcast'
+    url: '#post'
     weight: 6
   - name: Contact
     url: '#contact'
