@@ -28,21 +28,6 @@ featured: false
 #  placement: 2
 #  preview_only: false
 
-links:
-  - icon_pack: fab
-    icon: spotify
-    name: Listen on Spotify
-    url: 'https://open.spotify.com/episode/5aiaXjujPTU1GFrGOyejYz?si=jTbjfLGbQrOfQ-CMP3j1uA'
-  - icon_pack: fab
-    icon: soundcloud
-    name: Listen on Soundcloud
-    url: 'https://soundcloud.com/user-299897290/aflevering-6-zijn-vox-pops-de-echte-stem-van-het-volk'
- - icon_pack: fab
-    icon: apple
-    name: Listen on Apple Podcast
-    url: 'https://podcasts.apple.com/be/podcast/aflevering-6-zijn-vox-pops-de-echte-stem-van-het-volk/id1570392842?i=1000545486568'
-    
-   
 
 authors:
 - admin
@@ -64,14 +49,14 @@ categories:
 Luister op [Spotify](https://open.spotify.com/episode/5aiaXjujPTU1GFrGOyejYz?si=jTbjfLGbQrOfQ-CMP3j1uA), [Soundcloud](https://soundcloud.com/user-299897290/aflevering-6-zijn-vox-pops-de-echte-stem-van-het-volk) of [Apple Podcast](https://podcasts.apple.com/be/podcast/aflevering-6-zijn-vox-pops-de-echte-stem-van-het-volk/id1570392842?i=1000545486568).
 
 ## Tijdsschema
-00:00 – 06:19 Intro: wat zijn voxpops?
-06:19 – 08:23 Hoe kiezen journalisten voxpops?
-08:23 – 13:47 Journalisten en publieke opinie
-13:47 – 22:06 Wie en welke meningen zitten er in voxpops?
-22:06 – 28:37 De effecten van voxpops
-28:37 – 32:06 Advies aan journalisten
-32:06 – 39:47 Het nut en de toekomst van voxpops
-39:47 – 41:38 Les voor de luisteraar
+- 00:00 – 06:19 Intro: wat zijn voxpops?
+- 06:19 – 08:23 Hoe kiezen journalisten voxpops?
+- 08:23 – 13:47 Journalisten en publieke opinie
+- 13:47 – 22:06 Wie en welke meningen zitten er in voxpops?
+- 22:06 – 28:37 De effecten van voxpops
+- 28:37 – 32:06 Advies aan journalisten
+- 32:06 – 39:47 Het nut en de toekomst van voxpops
+- 39:47 – 41:38 Les voor de luisteraar
 
 Wil je meer weten over de onderwerpen die we hebben besproken? We hebben een overzichtje gemaakt van de interessante content die voorbijkwam:
 De complete aflevering van EditieNL vind je [hier](https://www.rtlnieuws.nl/editienl/artikel/5271250/coronapil-coronavirus-maatregelen-vaccin-weigeren).
@@ -84,7 +69,7 @@ De relevante publicaties van Kathleen:
 * Beckers, K., Walgrave, S., Wolf, H. V., Lamot, K., & Van Aelst, P. (2021). Right-wing bias in journalists’ perceptions of public opinion. Journalism Practice, 15(2), 243-258.
 * Beckers, K. (2019). What vox pops say and how that matters: Effects of vox pops in television news on perceived public opinion and personal opinion. Journalism & Mass Communication Quarterly, 96(4), 980-1003.
 
-Meer weten over Kathleen? Volg haar dan op Twitter via @KathleenBeckers.
+Meer weten over Kathleen? Volg haar dan op Twitter via [@KathleenBeckers](https://twitter.com/KathleenBeckers).
 
 Heb je tips of suggesties? Mail dan naar politicologica@gmail.com
 
