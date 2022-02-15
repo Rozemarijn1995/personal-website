@@ -9,10 +9,10 @@ summary: In deze aflevering bespreken we samen met Ine Kuypers en Stefaan Walgra
 projects: []
 
 # Date published
-date: "2021-06-02T00:00:00Z"
+date: "2021-06-01T00:00:00Z"
 
 # Date updated
-lastmod: "2021-06-02T00:00:00Z"
+lastmod: "2021-06-01T00:00:00Z"
 
 # Is this an unpublished draft?
 draft: false
