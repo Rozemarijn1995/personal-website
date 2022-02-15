@@ -28,18 +28,6 @@ featured: false
 #  placement: 2
 #  preview_only: false
 
-authors:
-- admin
-
-tags:
-- Podcast
-
-
-categories:
-- Podcast
-
----
-
 links:
   - icon_pack: fab
     icon: spotify
@@ -55,6 +43,21 @@ links:
     url: 'https://podcasts.apple.com/be/podcast/aflevering-6-zijn-vox-pops-de-echte-stem-van-het-volk/id1570392842?i=1000545486568'
     
    
+
+authors:
+- admin
+
+tags:
+- Podcast
+
+
+categories:
+- Podcast
+
+
+---
+
+
 
 ### Shownotes
 
