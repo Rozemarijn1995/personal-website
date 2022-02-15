@@ -74,12 +74,12 @@ Wil je meer weten over de onderwerpen die we hebben besproken? We hebben een ove
 De complete aflevering van EditieNL vind je [hier](https://www.rtlnieuws.nl/editienl/artikel/5271250/coronapil-coronavirus-maatregelen-vaccin-weigeren).
 
 De relevante publicaties van Kathleen:
--Beckers, K., Walgrave, S., & Van den Bulck, H. (2018). Opinion balance in vox pop television news. Journalism Studies, 19(2), 284-296.
--Beckers, K., & Harder, R. A. (2016). “Twitter Just Exploded” Social media as alternative vox pop. Digital Journalism, 4(7), 910-920.
--Beckers, K. (2017). How ordinary is the ordinary (wo) man on the street? An analysis of vox pop characteristics in television news. Journalism Practice, 11(8), 1026-1041.
--Beckers, K. (2018). Vox pops in the news: The journalists’ perspective. Communications, 43(1), 101-111
--Beckers, K., Walgrave, S., Wolf, H. V., Lamot, K., & Van Aelst, P. (2021). Right-wing bias in journalists’ perceptions of public opinion. Journalism Practice, 15(2), 243-258.
--Beckers, K. (2019). What vox pops say and how that matters: Effects of vox pops in television news on perceived public opinion and personal opinion. Journalism & Mass Communication Quarterly, 96(4), 980-1003.
+* Beckers, K., Walgrave, S., & Van den Bulck, H. (2018). Opinion balance in vox pop television news. Journalism Studies, 19(2), 284-296.
+* Beckers, K., & Harder, R. A. (2016). “Twitter Just Exploded” Social media as alternative vox pop. Digital Journalism, 4(7), 910-920.
+* Beckers, K. (2017). How ordinary is the ordinary (wo) man on the street? An analysis of vox pop characteristics in television news. Journalism Practice, 11(8), 1026-1041.
+* Beckers, K. (2018). Vox pops in the news: The journalists’ perspective. Communications, 43(1), 101-111
+* Beckers, K., Walgrave, S., Wolf, H. V., Lamot, K., & Van Aelst, P. (2021). Right-wing bias in journalists’ perceptions of public opinion. Journalism Practice, 15(2), 243-258.
+* Beckers, K. (2019). What vox pops say and how that matters: Effects of vox pops in television news on perceived public opinion and personal opinion. Journalism & Mass Communication Quarterly, 96(4), 980-1003.
 
 Meer weten over Kathleen? Volg haar dan op Twitter via @KathleenBeckers.
 
