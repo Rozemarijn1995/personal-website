@@ -48,8 +48,6 @@ categories:
 
 Luister op [Spotify](https://open.spotify.com/episode/7kfGyxqkgumFNMAkeIdNhs?si=9so0hUuwRc-mHGOL7eO5-g), [Soundcloud](https://soundcloud.com/user-299897290/aflevering-1-social-media-als-campagnetool-een-vloek-of-een-zegen) of [Apple Podcast](https://podcasts.apple.com/be/podcast/aflevering-1-social-media-als-campagnetool-een-vloek/id1570392842?i=1000523886067).
 
-Shownotes
-
 Wil je meer weten over de onderwerpen die we hebben besproken? We hebben een overzichtje gemaakt van de interessante content die voorbijkwam:
 
 * [Adlens](adlens-be.medium.com/), het onderzoekscollectief dat maandelijks politieke Facebookadvertenties onderzoekt
