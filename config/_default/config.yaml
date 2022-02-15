@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Rozemarijn van Dijk # Website name
-baseurl: 'http://www.rozemarijnvandijk.eu/' # Website URL
+baseurl: 'https://example.com/' # Website URL
 copyright: '© 2022 Rozemarijn van Dijk'
 
 ############################
