@@ -22,12 +22,9 @@ main:
   - name: Podcast Politicologica
     url: '#podcast'
     weight: 6
-  - name: Podcast episodes
-    url: "episodes"
-    weight: 7
   - name: Contact
     url: '#contact'
-    weight: 8
+    weight: 7
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
