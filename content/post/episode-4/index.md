@@ -3,7 +3,7 @@ title: Aflevering 4
 subtitle: Conflict en beleid. Zonder wrijving geen glans?
 
 # Summary for listings and search engines
-summary: 
+summary: In deze aflevering spreken we Wouter Van Dooren over conflict en beleid. 
 
 # Link this post with a project
 projects: []

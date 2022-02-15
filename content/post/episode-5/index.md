@@ -3,7 +3,7 @@ title: Aflevering 5
 subtitle: Worden journalisten gedreven door (jouw) data?
 
 # Summary for listings and search engines
-summary: 
+summary: In deze aflevering spreken we Kenza Lamot over news metrics. 
 
 # Link this post with a project
 projects: []
@@ -48,7 +48,6 @@ categories:
 
 Luister op [Spotify](https://open.spotify.com/episode/4pot1OmB0rGQifMxFLAycF?si=eqmXigo_SXq9HQHFhyYrwg), [Soundcloud](https://soundcloud.com/user-299897290/aflevering-5-hoe-gebruiken-journalisten-data) of [Apple Podcast](https://podcasts.apple.com/be/podcast/aflevering-5-worden-journalisten-gedreven-door-jouw-data/id1570392842?i=1000539841376).
 
-Shownotes
 
 Wil je meer weten over de onderwerpen die we hebben besproken? We hebben een overzichtje gemaakt van de interessante content die voorbijkwam:
 

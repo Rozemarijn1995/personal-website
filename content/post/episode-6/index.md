@@ -3,7 +3,7 @@ title: Aflevering 6
 subtitle: Zijn vox pops de echte stem van het volk?
 
 # Summary for listings and search engines
-summary: 
+summary: In deze aflevering interviewen we Kathleen Beckers over vox pops in het nieuws.
 
 # Link this post with a project
 projects: []
