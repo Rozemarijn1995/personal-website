@@ -11,7 +11,6 @@ highlight = false
 #   3 = MLA
 #   4 = Stream
 list_format = 2
-view = 4
 
 
 +++
