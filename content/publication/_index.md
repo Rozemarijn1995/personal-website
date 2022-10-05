@@ -1,6 +1,6 @@
 +++
 title = "Publications"
-date = "2022-02-03T00:00:00Z"
+date = "2022-10-05T00:00:00Z"
 math = false
 highlight = false
 
@@ -11,5 +11,7 @@ highlight = false
 #   3 = MLA
 #   4 = Stream
 list_format = 2
+view = 4
+
 
 +++
