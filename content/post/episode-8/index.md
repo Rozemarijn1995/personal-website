@@ -9,7 +9,7 @@ summary: In deze aflevering interviewen we Jolijn De Roover over waar gemeentes 
 projects: []
 
 # Date published
-date: "2021-12-21T00:00:00Z"
+date: "2022-06-10T00:00:00Z"
 
 # Date updated
 lastmod: "2022-06-10T00:00:00Z"
