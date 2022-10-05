@@ -22,9 +22,17 @@ Dijk, van, R. E. (April 13, 2021). [Met een nieuw kiesstelsel is in 2025 méér 
 ### 2020
 Dijk, van, R. E. & Holsteyn, van, J. J. M. (June 4, 2020). [Een vrouw als lijsttrekker helpt niet om meer vrouwen in de Kamer te krijgen](https://www.trouw.nl/opinie/een-vrouw-als-lijsttrekker-helpt-niet-om-meer-vrouwen-in-de-kamer-te-krijgen~b311d09f/?referrer=https%3A%2F%2Fwww.ecosia.org%2F). Trouw.
 
-Louwerse, T. & R. E. van Dijk (July 8, 2020). [Peilingennieuws geeft weinig informatie over onderzoeksaanpak. Hoe kan dat beter?](https://stukroodvlees.nl/peilingennieuws-geeft-weinig-informatie-over-onderzoeksaanpak-hoe-kan-dat-beter/). Stuk Rood Vleees
+Louwerse, T. & R. E. van Dijk (July 8, 2020). [Peilingennieuws geeft weinig informatie over onderzoeksaanpak. Hoe kan dat beter?](https://stukroodvlees.nl/peilingennieuws-geeft-weinig-informatie-over-onderzoeksaanpak-hoe-kan-dat-beter/). Stuk Rood Vlees
 
 Dijk, van, R. E. & Holsteyn, van, J. J. M. (August 18, 2020). [Kaag kiezen heft tekort aan vrouwelijke politici niet op](https://www.nrc.nl/nieuws/2020/08/18/kaag-kiezen-heft-tekort-aan-vrouwelijke-politici-niet-op-a4009100). NRC Handelsblad. 
 
 ### 2016
 Dijk, van, R. E. & Holsteyn, van, J. J. M. (August 5, 2016). [Politicus of Politica](https://eenvandaag.avrotros.nl/panels/opiniepanel/alle-uitslagen/item/politicus-of-politica/). EenVandaag. 
+
+## Interviews
+
+### 2022
+I. Laan (2022, 26 maart). Vrouwen mijden vaker de stembus. Haarlems Dagblad. 
+
+### 2017
+BNNVARA (2017, 8 maart). [Waarom je op een vrouw zou moeten stemmen](https://www.bnnvara.nl/artikelen/vrouwen-stemmen-stem-op-een-vrouw-quotum-quota). 
