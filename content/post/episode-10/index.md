@@ -3,7 +3,7 @@ title: Aflevering 10
 subtitle: 
 
 # Summary for listings and search engines
-summary: 
+summary: In deze aflevering spreken we met professor Tom Sauer over de oorlog in Oekraïne en over het gebruik van kernwapens. 
 
 # Link this post with a project
 projects: []
