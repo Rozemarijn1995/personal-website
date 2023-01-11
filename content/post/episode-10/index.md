@@ -41,6 +41,12 @@ categories:
 
 
 ---
+### Shownotes
+
+Luister op [Spotify](https://open.spotify.com/episode/3TqlrZVVIh5ldNncXGzNjt?si=6de522bac9ad4ac7), [Soundcloud](https://soundcloud.com/user-299897290/aflevering-10-hoe-reeel-is-een-kernwapenoorlog) of [Apple Podcast](https://podcasts.apple.com/be/podcast/aflevering-10-hoe-re%C3%ABel-is-een-kernwapenoorlog/id1570392842?i=1000583844089).
+
+## Tijdsschema
+
 00:00 - 01:10 Intro
 01:10 - 06:50 Wat zijn de oorzaken van de Russische inval in Oekraïne?
 06:50 - 20:06 Oekraïne als bufferstaat
@@ -51,10 +57,9 @@ categories:
 44:49 - 49:43 Wanneer het bijna misging
 49:43 - 50:24 Einde
 
-### Shownotes
-
-Luister op [Spotify](https://open.spotify.com/episode/3TqlrZVVIh5ldNncXGzNjt?si=6de522bac9ad4ac7), [Soundcloud](https://soundcloud.com/user-299897290/aflevering-10-hoe-reeel-is-een-kernwapenoorlog) of [Apple Podcast](https://podcasts.apple.com/be/podcast/aflevering-10-hoe-re%C3%ABel-is-een-kernwapenoorlog/id1570392842?i=1000583844089).
-
-## Tijdsschema
+Wil je meer weten over het onderzoek van Tom Sauer, bekijk dan zeker ook de volgende tips:
+* Sauer, T. (2019). De strijd voor vrede. En hoe we die kunnen winnen. Polis/Pelckmans
+* Sauer, T. (2020). Nuclear arms control, disarmament and nonproliferation regimes in deep crisis. Ethics and Armed Force(7)1, 50-56.
+*   Sauer, T. (2017). The Origins of the Ukraine Crisis and the Need for Collective Security between Russia and the West. Global Policy(8)1, 82-91.
 
 Heb je tips of suggesties? Mail dan naar politicologica@gmail.com
