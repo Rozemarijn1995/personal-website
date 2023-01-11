@@ -61,8 +61,8 @@ Luister op [Spotify](https://open.spotify.com/episode/3TqlrZVVIh5ldNncXGzNjt?si=
 
 
 Wil je meer weten over het onderzoek van Tom Sauer, bekijk dan zeker ook de volgende tips:
-- Sauer, T. (2019). De strijd voor vrede. En hoe we die kunnen winnen. Polis/Pelckmans
-- Sauer, T. (2020). Nuclear arms control, disarmament and nonproliferation regimes in deep crisis. Ethics and Armed Force(7)1, 50-56.
-- Sauer, T. (2017). The Origins of the Ukraine Crisis and the Need for Collective Security between Russia and the West. Global Policy(8)1, 82-91.
+* Sauer, T. (2019). De strijd voor vrede. En hoe we die kunnen winnen. Polis/Pelckmans
+* Sauer, T. (2020). Nuclear arms control, disarmament and nonproliferation regimes in deep crisis. Ethics and Armed Force(7)1, 50-56.
+* Sauer, T. (2017). The Origins of the Ukraine Crisis and the Need for Collective Security between Russia and the West. Global Policy(8)1, 82-91.
 
 Heb je tips of suggesties? Mail dan naar politicologica@gmail.com
