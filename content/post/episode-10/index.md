@@ -9,10 +9,10 @@ summary: In deze aflevering spreken we met professor Tom Sauer over de oorlog in
 projects: []
 
 # Date published
-date: "2022-06-10T00:00:00Z"
+date: "2022-24-10T00:00:00Z"
 
 # Date updated
-lastmod: "2022-06-10T00:00:00Z"
+lastmod: "2023-11-01T00:00:00Z"
 
 # Is this an unpublished draft?
 draft: false
