@@ -10,7 +10,7 @@ highlight = false
 #   2 = APA
 #   3 = MLA
 #   4 = Stream
-list_format = 2
+list_format = 4
 
 
 +++
