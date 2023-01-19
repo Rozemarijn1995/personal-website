@@ -1,7 +1,7 @@
 +++
 abstract = ""
 
-authors = ["admin""]
+authors = ["admin"]
 date = "2022-06-07"
 math = false
 publication = "*Politics of the Low Countries*"
