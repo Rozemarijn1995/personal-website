@@ -1,10 +1,10 @@
 +++
 abstract = ""
 
-authors = ["admin"]
-date = "2023-01-12"
+authors = ["admin""]
+date = "2022-06-07"
 math = false
-publication = ""
+publication = "*Politics of the Low Countries*"
 title = ""
 selected=true
 doi = ""
@@ -13,7 +13,6 @@ url_dataset = ""
 url_pdf = ""
 url_slides = ""
 url_video = ""
-links = ""
 publication_types = ["2"]
 
 +++
