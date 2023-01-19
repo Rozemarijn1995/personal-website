@@ -2,9 +2,9 @@
 abstract = ""
 
 authors = ["admin"]
-date = "2022-06-07"
+date = "2023-01-12"
 math = false
-publication = "*Politics of the Low Countries*"
+publication = "*Women's Studies International Forum*"
 title = ""
 selected=true
 doi = ""
