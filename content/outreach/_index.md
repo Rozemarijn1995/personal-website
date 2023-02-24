@@ -14,6 +14,9 @@ highlight = false
 
 ## Popular publications
 
+### 2023
+Dijk, van R. E. (February 14, 2023). [Kandidaatselectie: de ‘secret garden’ van Nederlandse politieke partijen](https://stukroodvlees.nl/kandidaatselectie-de-secret-garden-van-nederlandse-politieke-partijen/). Stuk Rood Vlees.
+
 ### 2021
 Dijk, van, R. E. & Holsteyn, van, J. J. M. (February 16, 2021). [Vrouwen blijven ondervertegenwoordigd in de Tweede Kamer. Maar er is een manier waarop de kiezers handig kunnen ingrijpen](https://www.volkskrant.nl/columns-opinie/vrouwen-blijven-ondervertegenwoordigd-in-de-tweede-kamer-maar-er-is-een-manier-waarop-de-kiezers-handig-en-verstandig-kunnen-ingrijpen~be949cf5/). De Volkskrant. 
 
@@ -31,8 +34,12 @@ Dijk, van, R. E. & Holsteyn, van, J. J. M. (August 5, 2016). [Politicus of Polit
 
 ## Interviews
 
+### 2023
+G. De Mooij (2023, 18 February). [Provinciale partijen worstelen in zoektocht naar vrouwelijk talent: 'Kijk ook eens in andere sectoren’](https://www.noordhollandsdagblad.nl/cnt/dmf20230219_63357181). Noordhollands Dagblad
+
+
 ### 2022
-I. Laan (2022, 26 maart). Vrouwen mijden vaker de stembus. Haarlems Dagblad. 
+I. Laan (2022, 26 March). Vrouwen mijden vaker de stembus. Haarlems Dagblad. 
 
 ### 2017
-BNNVARA (2017, 8 maart). [Waarom je op een vrouw zou moeten stemmen](https://www.bnnvara.nl/artikelen/vrouwen-stemmen-stem-op-een-vrouw-quotum-quota). 
+BNNVARA (2017, 8 March). [Waarom je op een vrouw zou moeten stemmen](https://www.bnnvara.nl/artikelen/vrouwen-stemmen-stem-op-een-vrouw-quotum-quota). 
