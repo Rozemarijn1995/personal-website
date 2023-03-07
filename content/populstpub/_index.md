@@ -31,19 +31,3 @@ Dijk, van, R. E. & Holsteyn, van, J. J. M. (August 18, 2020). [Kaag kiezen heft 
 
 ### 2016
 Dijk, van, R. E. & Holsteyn, van, J. J. M. (August 5, 2016). [Politicus of Politica](https://eenvandaag.avrotros.nl/panels/opiniepanel/alle-uitslagen/item/politicus-of-politica/). EenVandaag. 
-
-## Interviews
-
-### 2023
-G. De Mooij (2023, 18 February). [Provinciale partijen worstelen in zoektocht naar vrouwelijk talent: 'Kijk ook eens in andere sectoren’](https://www.noordhollandsdagblad.nl/cnt/dmf20230219_63357181). Noordhollands Dagblad
-
-C. Arnoldy (2023, 6 March). Zijn kieslijsten representatief? Weinig vrouwen op verkiesbare plekken. Leidsch Dagblad. 
-
-I. Brandemann (2023,6 March). [Is BBB stabiel genoeg om na grote winst te blijven bestaan? ‘Ik houd mijn hart vast’](https://www.nd.nl/nieuws/politiek/1165527/is-bbb-stabiel-genoeg-om-na-grote-winst-te-blijven-bestaan-ik-h#closemodal). Nederlands Dagblad. 
-
-
-### 2022
-I. Laan (2022, 26 March). Vrouwen mijden vaker de stembus. Haarlems Dagblad. 
-
-### 2017
-BNNVARA (2017, 8 March). [Waarom je op een vrouw zou moeten stemmen](https://www.bnnvara.nl/artikelen/vrouwen-stemmen-stem-op-een-vrouw-quotum-quota). 

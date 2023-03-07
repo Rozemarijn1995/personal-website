@@ -52,4 +52,4 @@ weight = 4
 +++
 
 
-A list of popular publications can be found [here](/outreach). 
+A list of popular publications can be found [here](/populstpub) and a list of interviews can be found [here](/interviews). 
