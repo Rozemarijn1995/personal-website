@@ -37,6 +37,10 @@ Dijk, van, R. E. & Holsteyn, van, J. J. M. (August 5, 2016). [Politicus of Polit
 ### 2023
 G. De Mooij (2023, 18 February). [Provinciale partijen worstelen in zoektocht naar vrouwelijk talent: 'Kijk ook eens in andere sectoren’](https://www.noordhollandsdagblad.nl/cnt/dmf20230219_63357181). Noordhollands Dagblad
 
+C. Arnoldy (2023, 6 March). Zijn kieslijsten representatief? Weinig vrouwen op verkiesbare plekken. Leidsch Dagblad. 
+
+I. Brandemann (2023,6 March). [Is BBB stabiel genoeg om na grote winst te blijven bestaan? ‘Ik houd mijn hart vast’](https://www.nd.nl/nieuws/politiek/1165527/is-bbb-stabiel-genoeg-om-na-grote-winst-te-blijven-bestaan-ik-h#closemodal). Nederlands Dagblad. 
+
 
 ### 2022
 I. Laan (2022, 26 March). Vrouwen mijden vaker de stembus. Haarlems Dagblad. 
