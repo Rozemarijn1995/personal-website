@@ -1,7 +1,7 @@
 ---
 date: '2022-02-02T00:00:00'
 draft: false
-title: Research
+title: Onderzoek
 subtitle: ''
 widget: blank
 headless: true
@@ -15,10 +15,9 @@ advanced:
   css_class: ''
 ---
 
-## Dissertation project
-My dissertation project is inspired by the puzzle of the underrepresentation of women in parliament. In my research I focus on the recruitment chain: how do politicians get selected? This is of crucial importance, since already on the ballot paper women are underrepresented. In different papers I try to study the candidate selection procedure from different angles: e.g., who are the people that select candidates? What kind of preferences do they have for the ideal candidate list? But I will also look at the other side: the candidates. Which party members are more likely to run for office? 
+## PhD project
+Mijn dissertatie gaat over de ondervertegenwoordiging van vrouwen in het parlement. In mijn onderzoek focus ik op de rekruteringsketen: hoe worden politici geselecteerd? In verschillende deelprojecten probeer ik het kandidaatselectieproces te belichten, zowel de kandidaten als de kandidaatselectiecommissies komen aan bod. 
 
-By investigating these questions, I will contribute to answering the question of why there still is no equal gender representation in parliament. 
 
-## Other projects
-Apart from my dissertation project, I am involved in a couple of other research projects. These projects are about affective polarization, gender quota, and gender diversity in the media. 
+## Andere projecten
+Buiten mijn doctoraat ben ik ook betrokken bij andere onderzoeksprojecten over onder andere affectieve polarisatie, gender quota, parlementair gedrag en genderdiversiteit in de Vlaamse nieuwsmedia. 

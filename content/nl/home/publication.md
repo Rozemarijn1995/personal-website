@@ -5,7 +5,7 @@
 date = "2022-02-03T00:00:00"
 active = true
 
-title = "Publications"
+title = "Publicaties"
 widget = "pages"
 headless = true  # This file represents a page section.
 
