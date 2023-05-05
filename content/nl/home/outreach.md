@@ -52,4 +52,4 @@ weight = 4
 +++
 
 
-Een overzicht van publicaties in de media kunt u [hier](/populstpub) en een lijst met interviews [hier](/interviews). 
+Een overzicht van publicaties in de media vindt u [hier](/populstpub)  en een lijst met interviews [hier](/interviews). 

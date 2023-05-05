@@ -18,19 +18,19 @@ bio:
 
 # Interests to show in About widget
 interests:
-- Party Politics
-- Gender and Politics
-- Candidate selection
-- Dutch Politics
+- Politieke partijen
+- Gender & Politics
+- Kandidaatselectie 
+- Nederlandse politiek
 
 # Education to show in About widget
 education:
   courses:
   - course: Research master Political Science and Public Administration
-    institution: Leiden University
+    institution: Universiteit Leiden
     year: 2019
   - course: Bachelor Political Science
-    institution: Leiden University
+    institution: Universiteit Leiden
     year: 2016
 
 
@@ -69,6 +69,6 @@ social:
 highlight_name: true
 ---
 
-My name is Rozemarijn van Dijk and I am a PhD-student at the University of Antwerp in Belgium. My dissertation is about the underrepresentation of women in politics and candidate selection. 
+Mijn naam is Rozemarijn van Dijk en ik ben een PhD-student aan de Universiteit Antwerpen in België. Mijn promotieonderzoek gaat over de ondervertegenwoordiging van vrouwen in de politiek. Meer specifiek over hoe politieke partijen hun kandidaten selecteren en hoe het kandidaatselectieproces een mogelijke verklaring biedt voor de beperkte aanwezigheid van vrouwen in het parlement. 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}cv{{< /staticref >}}.
