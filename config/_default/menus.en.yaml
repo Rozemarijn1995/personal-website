@@ -5,25 +5,25 @@
 
 main:
   - name: Home
-    url: '#about'
+    url: '#content/en/about'
     weight: 1
   - name: Bio
-    url: '#bio'
+    url: '#content/en/#bio'
     weight: 2
   - name: Research
-    url: '#research'
+    url: '#content/en/#research'
     weight: 3
   - name: Publications
-    url: '#publication'
+    url: '#content/en/#publication'
     weight: 4
   - name: Outreach
-    url: '#outreach'
+    url: '#content/en/#outreach'
     weight: 5
   - name: Podcast Politicologica
-    url: '#posts'
+    url: '#content/en/#posts'
     weight: 6
   - name: Contact
-    url: '#contact'
+    url: '#content/en/#contact'
     weight: 7
 
 # Link to a PDF of your resume/CV from the menu.
