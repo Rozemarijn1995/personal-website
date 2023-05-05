@@ -52,4 +52,4 @@ weight = 4
 +++
 
 
-A list of popular publications can be found [here](/populstpub) and a list of interviews can be found [here](/interviews). 
+Een overzicht van publicaties in de media kunt u [hier](/populstpub) en een lijst met interviews [hier](/interviews). 
