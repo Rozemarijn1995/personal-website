@@ -5,22 +5,22 @@
 
 main:
   - name: Home
-    url: '#content/en/about'
+    url: '#about'
     weight: 1
   - name: Bio
-    url: '#content/en/#bio'
+    url: '#bio'
     weight: 2
   - name: Research
-    url: '#content/en/#research'
+    url: '#research'
     weight: 3
   - name: Publications
-    url: '#content/en/#publication'
+    url: '#publication'
     weight: 4
   - name: Outreach
-    url: '#content/en/#outreach'
+    url: '#outreach'
     weight: 5
   - name: Contact
-    url: '#content/en/#contact'
+    url: '#contact'
     weight: 6
 
 # Link to a PDF of your resume/CV from the menu.
