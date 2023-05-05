@@ -19,12 +19,9 @@ main:
   - name: Outreach
     url: '#content/en/#outreach'
     weight: 5
-  - name: Podcast Politicologica
-    url: '#content/en/#posts'
-    weight: 6
   - name: Contact
     url: '#content/en/#contact'
-    weight: 7
+    weight: 6
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
