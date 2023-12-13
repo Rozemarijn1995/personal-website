@@ -1,7 +1,7 @@
 +++
 abstract = ""
 
-authors = [admin"]
+authors = ["admin"]
 date = "2023-12-01"
 math = false
 publication = ""
