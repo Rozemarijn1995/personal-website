@@ -1,7 +1,7 @@
 +++
 abstract = ""
 
-authors = ["admin"]
+authors = [K. Beckers, "admin", "P. Van Aelst", "K. De Swert"]
 date = ""
 math = false
 publication = ""
