@@ -13,6 +13,8 @@ highlight = false
 
 
 ## Popular publications
+### 2024
+Dijk, van R. E. (June 4, 2024). [Plaatjes van de Vlaamse electoraatjes: N-VA en Vlaams Belang](https://stukroodvlees.nl/plaatjes-van-de-vlaamse-electoraatjes-n-va-en-vlaams-belang/). Stuk Rood Vlees.
 
 ### 2023
 Dijk, van R. E. (February 14, 2023). [Kandidaatselectie: de ‘secret garden’ van Nederlandse politieke partijen](https://stukroodvlees.nl/kandidaatselectie-de-secret-garden-van-nederlandse-politieke-partijen/). Stuk Rood Vlees.
