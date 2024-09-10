@@ -71,4 +71,4 @@ highlight_name: true
 
 Mijn naam is Rozemarijn van Dijk en ik ben een PhD-student aan de Universiteit Antwerpen in België. Mijn promotieonderzoek gaat over de ondervertegenwoordiging van vrouwen in de politiek. Meer specifiek over hoe politieke partijen hun kandidaten selecteren en hoe het kandidaatselectieproces een mogelijke verklaring biedt voor de beperkte aanwezigheid van vrouwen in het parlement. 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}cv{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download mijn cv {{< staticref "uploads/Resume_sep24.pdf" "newtab" >}}cv{{< /staticref >}}.
