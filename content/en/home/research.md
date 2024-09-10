@@ -16,9 +16,7 @@ advanced:
 ---
 
 ## Dissertation project
-My dissertation project is inspired by the puzzle of the underrepresentation of women in parliament. In my research I focus on the recruitment chain: how do politicians get selected? This is of crucial importance, since already on the ballot paper women are underrepresented. In different papers I try to study the candidate selection procedure from different angles: e.g., who are the people that select candidates? What kind of preferences do they have for the ideal candidate list? But I will also look at the other side: the candidates. Which party members are more likely to run for office? 
-
-By investigating these questions, I will contribute to answering the question of why there still is no equal gender representation in parliament. 
+My dissertation project is inspired by the puzzle of the underrepresentation of women in parliament. In my research I focus on how political parties select candidates and on the individual recruitment chain. What rules do parties use to select candidates and how this affect which candidates they select? Is there a gender gap in political ambition among party members? Do inclusive and exclusive selectorates create different candidate lists? By answering these questions I try to get a grasp on both the supply and demand of political candidates and to examine whether this is gendered.
 
 ## Other projects
-Apart from my dissertation project, I am involved in a couple of other research projects. These projects are about affective polarization, gender quota, and gender diversity in the media. 
+Apart from my dissertation project, I am involved in a couple of other research projects. These projects are about gender quota; candidate selection in the UK; LGBT wings in political parties; gendered parliamentary behavior; and (gendered) violence against politicians. 
