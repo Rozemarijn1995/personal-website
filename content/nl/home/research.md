@@ -16,8 +16,8 @@ advanced:
 ---
 
 ## PhD project
-Mijn dissertatie gaat over de ondervertegenwoordiging van vrouwen in het parlement. In mijn onderzoek focus ik op de rekruteringsketen: hoe worden politici geselecteerd? In verschillende deelprojecten probeer ik het kandidaatselectieproces te belichten, zowel de kandidaten als de kandidaatselectiecommissies komen aan bod. Doet het er bijvoorbeeld toe als partijleden een belangrijke rol spelen in het kandidaatselectieproces? Zorgt dat voor meer of minder diversiteit op de lijst?
+Mijn doctoraatsproject was geïnspireerd door de puzzel van de ondervertegenwoordiging van vrouwen in het parlement. Ik richtte me op hoe politieke partijen kandidaten selecteren (de vraagzijde van politieke rekrutering) en op de vorming van politieke ambitie (de aanbodzijde). Welke regels hanteren partijen bij de selectie van kandidaten, en hoe beïnvloedt dit wie er uiteindelijk wordt geselecteerd? Is er een genderverschil in politieke ambitie onder partijleden? Leiden inclusieve en exclusieve selectieprocedures tot andere kandidatenlijsten? Door deze vragen te beantwoorden, probeerde ik zowel de vraag- als aanbodzijde van politieke rekrutering beter te begrijpen, en te onderzoeken in hoeverre deze processen gegenderd zijn.
 
 
 ## Andere projecten
-Buiten mijn doctoraat ben ik ook betrokken bij verschillende onderzoeksprojecten over onder andere gender quota, parlementair gedrag, LGBTQ+-vleugels in politieke partijen en geweld tegen politici. 
+Naast mijn doctoraatsproject ben ik betrokken bij een aantal andere onderzoeksprojecten. Deze gaan over genderquota, kandidaatselectie in het Verenigd Koninkrijk (samen met Chris Butler), LGBT-afdelingen binnen politieke partijen (samen met Michal Grahn en Sofia Ammassari), gegenderd gedrag in parlementen (samen met Zeljko Poljak), en (gegenderd) geweld tegen politici (samen met Joep van Lit).
