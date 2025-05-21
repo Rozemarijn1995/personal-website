@@ -6,7 +6,7 @@ title: Rozemarijn van Dijk
 superuser: true
 
 # Role/position/tagline
-role: PhD-student
+role: postdoctoral researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -22,10 +22,14 @@ interests:
 - Gender and Politics
 - Candidate selection
 - Dutch Politics
+- Political violence
 
 # Education to show in About widget
 education:
   courses:
+  - course: PhD Political Science
+    institution: University of Antwerp
+    year: 2025
   - course: Research master Political Science and Public Administration
     institution: Leiden University
     year: 2019
@@ -42,18 +46,15 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:rozemarijn.vandijk@uantwerpen.be'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/rozemarijnvdijk
 - icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
   icon_pack: fas
   link: https://scholar.google.be/citations?user=HwWTda8AAAAJ&hl=nl
 - icon: github
   icon_pack: fab
   link: https://github.com/Rozemarijn1995
-#- icon: linkedin
-#  icon_pack: fab
-#  link: https://www.linkedin.com/
+- icon: linkedin
+  icon_pack: fab
+  link: [https://www.linkedin.com/](https://www.linkedin.com/in/rozemarijnvandijk/)
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
