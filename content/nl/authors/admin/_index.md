@@ -22,10 +22,14 @@ interests:
 - Gender & Politics
 - Kandidaatselectie 
 - Nederlandse politiek
+- Geweld tegen politici
 
 # Education to show in About widget
 education:
   courses:
+  - course: Doctoraat Politieke Wetenschappen
+    institution: Universiteit Antwerpen
+    year: 2025
   - course: Research master Political Science and Public Administration
     institution: Universiteit Leiden
     year: 2019
@@ -42,18 +46,15 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:rozemarijn.vandijk@uantwerpen.be'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/rozemarijnvdijk
 - icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
   icon_pack: fas
   link: https://scholar.google.be/citations?user=HwWTda8AAAAJ&hl=nl
 - icon: github
   icon_pack: fab
   link: https://github.com/Rozemarijn1995
-#- icon: linkedin
-#  icon_pack: fab
-#  link: https://www.linkedin.com/
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/rozemarijnvandijk/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
@@ -69,6 +70,6 @@ social:
 highlight_name: true
 ---
 
-Mijn naam is Rozemarijn van Dijk en ik ben een PhD-student aan de Universiteit Antwerpen in België. Mijn promotieonderzoek gaat over de ondervertegenwoordiging van vrouwen in de politiek. Meer specifiek over hoe politieke partijen hun kandidaten selecteren en hoe het kandidaatselectieproces een mogelijke verklaring biedt voor de beperkte aanwezigheid van vrouwen in het parlement. 
+Mijn naam is Rozemarijn van Dijk en ik ben een postdoc aan de Universiteit Antwerpen in België. Mijn promotieonderzoek ging over de ondervertegenwoordiging van vrouwen in de politiek. Meer specifiek over hoe politieke partijen hun kandidaten selecteren en hoe het kandidaatselectieproces een mogelijke verklaring biedt voor de beperkte aanwezigheid van vrouwen in het parlement. 
 
 {{< icon name="download" pack="fas" >}} Download mijn cv {{< staticref "uploads/Resume_sep24.pdf" "newtab" >}}cv{{< /staticref >}}.
