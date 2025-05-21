@@ -13,6 +13,9 @@ highlight = false
 
 ## Interviews
 
+### 2025
+(2025, 10 Mei). [Hoe vind je een vrouw voor je politieke partij?](https://www.nporadio1.nl/fragmenten/dr-kelder-en-co/0196b9b0-54c6-70d1-bae9-7d6cdf5e0881/2025-05-10-hoe-vind-je-een-vrouw-voor-je-politieke-partij). Dr. Kelder en Co. 
+
 ### 2023
 (2023, 22 November). [BNR Ochtendspits over de verkiezingen](https://www.bnr.nl/podcast/de-ochtendspits/10532267/de-ochtendspits-22-november). BNR.
 
