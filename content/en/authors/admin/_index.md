@@ -73,4 +73,4 @@ highlight_name: true
 
 My name is Rozemarijn van Dijk and I am a postdoctoral researcher at the University of Antwerp in Belgium. My dissertation was about the underrepresentation of women in politics and candidate selection. 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Resume_sep24.pdf" "newtab" >}}cv{{< /staticref >}}. Last updated September 2024.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Resume_sep24.pdf" "newtab" >}}cv{{< /staticref >}}. Last updated June 2025.
