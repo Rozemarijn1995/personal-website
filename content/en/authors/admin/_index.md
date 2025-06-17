@@ -19,6 +19,7 @@ bio:
 # Interests to show in About widget
 interests:
 - Party Politics
+- Intraparty Politics
 - Gender and Politics
 - Candidate selection
 - Dutch Politics
@@ -45,7 +46,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:rozemarijn.vandijk@uantwerpen.be'
+  link: 'mailto:rozemarijn.van.dijk@gu.se'
 - icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
   icon_pack: fas
   link: https://scholar.google.be/citations?user=HwWTda8AAAAJ&hl=nl
