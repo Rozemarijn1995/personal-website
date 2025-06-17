@@ -10,8 +10,8 @@ role: postdoctoral researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: University of Antwerp
-  url: https://www.uantwerpen.be/en/
+- name: University of Gothenburg
+  url: https://www.gu.se/en
 
 # Short bio (displayed in user profile at end of posts)
 bio:
@@ -61,7 +61,7 @@ social:
 # and uncomment the lines below.
 # - icon: cv
 #   icon_pack: ai
-#   link: static/uploads/Resume_sep24.pdf
+#   link: static/uploads/resume_202506.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 # email: ""
