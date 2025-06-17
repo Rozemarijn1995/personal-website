@@ -6,12 +6,12 @@ title: Rozemarijn van Dijk
 superuser: true
 
 # Role/position/tagline
-role: PhD-student
+role: postdoctoraal onderzoeker
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: University of Antwerp
-  url: https://www.uantwerpen.be/en/
+- name: Göteborgs Universitet
+  url: https://www.gu.se/en
 
 # Short bio (displayed in user profile at end of posts)
 bio:
@@ -45,7 +45,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:rozemarijn.vandijk@uantwerpen.be'
+  link: 'mailto:rozemarijn.van.dijk@gu.se'
 - icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
   icon_pack: fas
   link: https://scholar.google.be/citations?user=HwWTda8AAAAJ&hl=nl
@@ -61,7 +61,7 @@ social:
 # and uncomment the lines below.
 # - icon: cv
 #   icon_pack: ai
-#   link: uploads/resume.pdf
+#   link: uploads/resume_202506.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 # email: ""
