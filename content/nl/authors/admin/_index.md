@@ -19,6 +19,7 @@ bio:
 # Interests to show in About widget
 interests:
 - Politieke partijen
+- Facties binnen politieke partijen
 - Gender & Politics
 - Kandidaatselectie 
 - Nederlandse politiek
@@ -72,4 +73,4 @@ highlight_name: true
 
 Mijn naam is Rozemarijn van Dijk en ik ben een postdoc aan de Universiteit Antwerpen in België. Mijn promotieonderzoek ging over de ondervertegenwoordiging van vrouwen in de politiek. Meer specifiek over hoe politieke partijen hun kandidaten selecteren en hoe het kandidaatselectieproces een mogelijke verklaring biedt voor de beperkte aanwezigheid van vrouwen in het parlement. 
 
-{{< icon name="download" pack="fas" >}} Download mijn cv {{< staticref "uploads/Resume_sep24.pdf" "newtab" >}}cv{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download mijn cv {{< staticref "uploads/resume_202506.pdf" "newtab" >}}cv{{< /staticref >}}.
