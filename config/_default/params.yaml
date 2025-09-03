@@ -20,23 +20,23 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: rozemarijn.vandijk@uantwerpen.be
+email: rozemarijn.van.dijk@gu.se
 address:
-  street: Sint-Jacobstraat 2
-  city: Antwerpen
-  postcode: '2000'
-  country: Belgium
+  street: Sprängkullsgatan 19
+  city: Göteborg
+  postcode: '41123'
+  country: Sweden
 coordinates:
-  latitude: '51.22045211538707'
-  longitude: '4.409671158018156'
+  latitude: '57.697820158544296'
+  longitude: '11.960231873879026'
 directions:
 office_hours:
 appointment_url:
 contact_links:
-  - icon: twitter
+  - icon: linkedin
     icon_pack: fab
     name: Find me on Twitter
-    link: 'https://twitter.com/rozemarijnvdijk'
+    link: 'https://www.linkedin.com/in/rozemarijnvandijk/?originalSubdomain=se'
 
 # Site header
 
