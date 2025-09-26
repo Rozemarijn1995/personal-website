@@ -11,8 +11,10 @@ highlight = false
 
 +++
 
-
 ## Popular publications
+### 2025
+Dijk, van R. E. (August 13, 2025). [Het is tijd om politieke ervaring te herdefiniëren](https://www.volkskrant.nl/columns-opinie/opinie-het-is-tijd-om-politieke-ervaring-te-herdefinieren~b55b7214/). De Volkskrant
+
 ### 2024
 Dijk, van R. E. & Maes, B. (June 4, 2024). [Plaatjes van de Vlaamse electoraatjes: N-VA en Vlaams Belang](https://stukroodvlees.nl/plaatjes-van-de-vlaamse-electoraatjes-n-va-en-vlaams-belang/). Stuk Rood Vlees.
 
