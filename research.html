@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research · Rozemarijn van Dijk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js"></script>
+  <style>
+    .research-block { margin-bottom: 3rem; }
+    .research-block h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.7rem; color: var(--text); }
+    .research-block p { font-size: 1rem; color: #374151; line-height: 1.8; max-width: 660px; }
+    .research-block p + p { margin-top: 0.9rem; }
+    .research-block a { color: var(--green-mid); text-decoration: none; font-weight: 500; }
+    .research-block a:hover { text-decoration: underline; }
+    .research-block ul { list-style: none; margin-top: 0.8rem; max-width: 660px; }
+    .research-block ul li { font-size: 1rem; color: #374151; padding: 0.25rem 0; line-height: 1.7; }
+    .research-block ul li::before { content: '—'; color: var(--green-accent); margin-right: 0.6rem; }
+    .project-tag {
+      display: inline-block; margin-bottom: 0.8rem;
+      font-size: 0.72rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      padding: 0.2rem 0.6rem; border-radius: 4px;
+      background: var(--green-pale); color: var(--green-dark);
+    }
+
+    /* Dissertation: text + cover side by side */
+    .diss-layout {
+      display: flex; gap: 2.5rem; align-items: flex-start; margin-top: 0.5rem;
+    }
+    .diss-text { flex: 1; min-width: 0; }
+    .diss-sidebar {
+      flex-shrink: 0; display: flex; flex-direction: column; gap: 1rem;
+      width: 175px;
+    }
+    .diss-sidebar img {
+      width: 175px; border-radius: 6px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      display: block;
+    }
+    .diss-color-card {
+      padding: 0.85rem 1rem;
+      background: var(--bg-subtle); border: 1px solid var(--border);
+      border-radius: 8px; font-size: 0.8rem; line-height: 1.75; color: var(--text-muted);
+    }
+    .diss-color-card .card-heading { color: var(--text); display: block; margin-bottom: 0.35rem; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; }
+    .diss-color-card .card-intro { display: block; margin-bottom: 0.6rem; font-size: 0.78rem; }
+    .diss-color-card .card-credit { display: block; margin-top: 0.7rem; padding-top: 0.6rem; border-top: 1px solid var(--border); font-size: 0.73rem; color: var(--text-light); }
+    .diss-color-card .card-credit a { color: var(--text-light); text-decoration: none; }
+    .diss-color-card .card-credit a:hover { color: var(--green-dark); text-decoration: underline; }
+    .diss-color-dot {
+      display: inline-block; width: 9px; height: 9px;
+      border-radius: 50%; margin-right: 0.4rem; vertical-align: middle;
+    }
+
+    /* Conferences table */
+    .conf-list { list-style: none; margin-top: 0.8rem; max-width: 660px; }
+    .conf-item {
+      padding: 0.85rem 0; border-bottom: 1px solid var(--bg-subtle);
+      display: grid; grid-template-columns: auto 1fr; gap: 0 1rem; align-items: start;
+    }
+    .conf-item:last-child { border-bottom: none; }
+    .conf-badge {
+      font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.08em; padding: 0.18rem 0.55rem; border-radius: 4px;
+      background: var(--bg-subtle); border: 1px solid var(--border);
+      color: var(--text-muted); white-space: nowrap; margin-top: 0.1rem;
+    }
+    .conf-content {}
+    .conf-title { font-size: 0.94rem; font-weight: 500; color: var(--text); margin-bottom: 0.2rem; }
+    .conf-meta { font-size: 0.82rem; color: var(--text-light); }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Rozemarijn van Dijk</a>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="en">Home</span><span class="nl">Home</span></a></li>
+    <li><a href="research.html" class="active"><span class="en">Research</span><span class="nl">Onderzoek</span></a></li>
+    <li><a href="publications.html"><span class="en">Publications</span><span class="nl">Publicaties</span></a></li>
+    <li><a href="outreach.html"><span class="en">Outreach</span><span class="nl">Media</span></a></li>
+    <li><a href="contact.html"><span class="en">Contact</span><span class="nl">Contact</span></a></li>
+  </ul>
+  <div class="lang-toggle">
+    <button data-lang-btn="en" onclick="switchLang('en')">EN</button>
+    <button data-lang-btn="nl" onclick="switchLang('nl')">NL</button>
+  </div>
+</nav>
+
+<div class="page-content">
+  <div class="container">
+    <div class="page-title"><span class="en">Research</span><span class="nl">Onderzoek</span></div>
+    <p class="page-subtitle">
+      <span class="en">My research sits at the intersection of party politics, gender, and candidate selection.</span>
+      <span class="nl">Mijn onderzoek bevindt zich op het snijvlak van partijpolitiek, gender en kandidaatselectie.</span>
+    </p>
+
+    <!-- INTRAPARTY -->
+    <div class="research-block">
+      <span class="project-tag"><span class="en">Current · Postdoc</span><span class="nl">Huidig · Postdoc</span></span>
+      <h3>INTRAPARTY project</h3>
+      <div class="en">
+        <p>As a postdoctoral researcher, I work in the <a href="https://www.gu.se/en/research/the-benefits-of-conflict-how-factions-can-enhance-political-parties-electoral-performance-intraparty" target="_blank">INTRAPARTY project</a> led by <a href="https://www.gu.se/en/about/find-staff/ann-kristinkolln" target="_blank">Ann-Kristin Kölln</a> at the University of Gothenburg. The project examines the internal life of political parties.</p>
+        <p>My contribution focuses on how intraparty groups — such as local chapters or thematic networks — try to influence the party's main agenda. What influence strategies do they use, and what determines that choice?</p>
+        <p>This project combines original data collection (including historical party documents, conference proceedings, and media archives) with quantitative text analysis methods.</p>
+        <p>Within this project I also specifically study the role of women's organizations as an internal interest organisation within political parties: what issues do they advocate for and how has this changed over time?</p>
+      </div>
+      <div class="nl">
+        <p>Als postdoctoraal onderzoeker werk ik aan het <a href="https://www.gu.se/en/research/the-benefits-of-conflict-how-factions-can-enhance-political-parties-electoral-performance-intraparty" target="_blank">INTRAPARTY-project</a> onder leiding van <a href="https://www.gu.se/en/about/find-staff/ann-kristinkolln" target="_blank">Ann-Kristin Kölln</a> aan de Universiteit van Göteborg. Het project onderzoekt het interne leven van politieke partijen.</p>
+        <p>Mijn bijdrage richt zich op hoe intrapartijgroepen — zoals lokale afdelingen of thematische netwerken — de hoofdagenda van de partij proberen te beïnvloeden. Welke invloedstrategieën gebruiken ze, en wat bepaalt die keuze?</p>
+        <p>Dit project combineert originele dataverzameling (waaronder historische partijdocumenten, conferentieverslagen en mediaarchieven) met kwantitatieve tekstanalysemethoden.</p>
+        <p>Binnen dit project bestudeer ik ook specifiek de rol van vrouwenorganisaties als interne belangengroep binnen politieke partijen: voor welke thema's pleiten ze en hoe is dit door de tijd heen veranderd?</p>
+      </div>
+      <div class="tags" style="margin-top:1rem;">
+        <span class="tag party"><span class="en">Intraparty politics</span><span class="nl">Intrapartijpolitiek</span></span>
+        <span class="tag gender"><span class="en">Gender &amp; politics</span><span class="nl">Gender &amp; politiek</span></span>
+        <span class="tag party"><span class="en">Party organisations</span><span class="nl">Partijorganisaties</span></span>
+      </div>
+    </div>
+
+    <!-- DISSERTATION -->
+    <div class="research-block">
+      <span class="project-tag"><span class="en">Completed · PhD</span><span class="nl">Afgerond · PhD</span></span>
+      <h3><span class="en">Dissertation: From Ambition to Admission</span><span class="nl">Proefschrift: From Ambition to Admission</span></h3>
+      <div class="diss-layout">
+        <div class="diss-text">
+          <div class="en">
+            <p>My dissertation examined the puzzle of women's underrepresentation in parliament by looking at both the <em>demand side</em> (how parties select candidates) and the <em>supply side</em> (who develops political ambition and why).</p>
+            <p>I used a variety of methods, such as rank conjoint experiments, vignette experiments, survey design and in-depth interviews.</p>
+            <p>Key findings: formal selection rules alone cannot explain the low number of female candidates — informal norms and practices matter just as much. Being an active party member, having prior political experience, and the incumbency bonus all systematically favour male candidates. On the supply side, women party members express similar levels of political ambition as men when they join a party, but on the societal level women express less political ambition. I argue that the main bottleneck remains the party: these organisations continue to be dominated by men.</p>
+            <p>You can read the full thesis <a href="https://repository.uantwerpen.be/docstore/d:irua:28328" target="_blank">here</a>.</p>
+          </div>
+          <div class="nl">
+            <p>Mijn proefschrift onderzocht het raadsel van de ondervertegenwoordiging van vrouwen in het parlement, door zowel de <em>vraagkant</em> (hoe partijen kandidaten selecteren) als de <em>aanbodkant</em> (wie politieke ambitie ontwikkelt en waarom) te bekijken.</p>
+            <p>Ik gebruikte diverse methoden, waaronder rank conjoint-experimenten, vignetexperimenten, surveydesign en diepte-interviews.</p>
+            <p>Belangrijkste bevindingen: formele selectieregels alleen kunnen het lage aantal vrouwelijke kandidaten niet verklaren — informele normen en praktijken zijn minstens zo belangrijk. Actief partijlid zijn, politieke ervaring hebben en het incumbency-voordeel begunstigen systematisch mannelijke kandidaten. Aan de aanbodkant tonen vrouwelijke partijleden vergelijkbare niveaus van politieke ambitie als mannen bij het toetreden tot een partij, maar op maatschappelijk niveau uiten vrouwen minder politieke ambitie. Ik betoog dat het grootste knelpunt bij de partij zelf ligt: deze organisaties blijven gedomineerd door mannen.</p>
+            <p>Het volledige proefschrift is <a href="https://repository.uantwerpen.be/docstore/d:irua:28328" target="_blank">hier</a> te lezen.</p>
+          </div>
+        </div>
+
+        <!-- Sidebar: cover + colour card -->
+        <div class="diss-sidebar">
+          <img src="images/dissertation-cover.jpg" alt="Dissertation cover: From Ambition to Admission"
+               onerror="this.style.display='none'">
+          <div class="diss-color-card">
+            <span class="card-heading"><span class="en">Cover design</span><span class="nl">Omslagontwerp</span></span>
+            <span class="card-intro">
+              <span class="en">Inspired by the colours of the suffragette movement:</span>
+              <span class="nl">Geïnspireerd door de kleuren van de suffragettebeweging:</span>
+            </span>
+            <span><span class="diss-color-dot" style="background:#52b788;"></span><strong><span class="en">Green</span><span class="nl">Groen</span></strong> — <span class="en">hope</span><span class="nl">hoop</span></span><br>
+            <span><span class="diss-color-dot" style="background:#7c3aed;"></span><strong><span class="en">Purple</span><span class="nl">Paars</span></strong> — <span class="en">loyalty &amp; dignity</span><span class="nl">loyaliteit &amp; waardigheid</span></span><br>
+            <span><span class="diss-color-dot" style="background:#e5e7eb; border:1px solid #9ca3af;"></span><strong><span class="en">White</span><span class="nl">Wit</span></strong> — <span class="en">purity</span><span class="nl">zuiverheid</span></span>
+            <span class="card-credit">
+              <span class="en">Design by</span><span class="nl">Ontwerp door</span>
+              <a href="https://www.persoonlijkproefschrift.nl" target="_blank">Anke Muijsers</a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tags" style="margin-top:1.2rem;">
+        <span class="tag candidate"><span class="en">Candidate selection</span><span class="nl">Kandidaatselectie</span></span>
+        <span class="tag gender"><span class="en">Gender &amp; politics</span><span class="nl">Gender &amp; politiek</span></span>
+        <span class="tag electoral"><span class="en">Dutch politics</span><span class="nl">Nederlandse politiek</span></span>
+      </div>
+    </div>
+
+    <!-- OTHER PROJECTS -->
+    <div class="research-block">
+      <span class="project-tag"><span class="en">Ongoing · Collaborations</span><span class="nl">Lopend · Samenwerkingen</span></span>
+      <h3><span class="en">Other projects</span><span class="nl">Andere projecten</span></h3>
+      <div class="en">
+        <p>Beyond the INTRAPARTY project, I am involved in several collaborative research projects:</p>
+        <ul>
+          <li><strong>LGBTQ+ wings in political parties</strong> — how LGBTQ+ party organisations lobby for their issues and how their role has changed over time, with <a href="https://www.michalgrahn.com/" target="_blank">Michal Grahn</a> and <a href="https://sofiaammassari.com/" target="_blank">Sofia Ammassari</a>.</li>
+          <li><strong>Violence against politicians</strong> — a factorial survey experiment on how learning about political violence affects citizens' political participation, with <a href="https://www.jmvanlit.nl/" target="_blank">Joep van Lit</a>. The paper is available as <a href="https://osf.io/phr9s_v1" target="_blank">pre-print 📝</a>.</li>
+          <li><strong>Voter perceptions of party unity and dividedness</strong> — are parties perceived as internally divided and are there electoral consequences, with <a href="https://www.rug.nl/staff/r.l.van.well/" target="_blank">Rick van Well</a>.</li>
+          <li><strong>Electoral systems and gender parity</strong> — examining how different electoral system designs affect the election of women, with Petra Meier and Petra Ahrens.</li>
+        </ul>
+      </div>
+      <div class="nl">
+        <p>Naast het INTRAPARTY-project ben ik betrokken bij meerdere collaboratieve onderzoeksprojecten:</p>
+        <ul>
+          <li><strong>LGBTQ+-vleugels in politieke partijen</strong> — hoe LGBTQ+-partijorganisaties lobbyen voor hun thema's en hoe hun rol door de tijd is veranderd, samen met <a href="https://www.michalgrahn.com/" target="_blank">Michal Grahn</a> en <a href="https://sofiaammassari.com/" target="_blank">Sofia Ammassari</a>.</li>
+          <li><strong>Geweld tegen politici</strong> — een factorieel surveyexperiment over hoe informatie over politiek geweld burgers' politieke participatie beïnvloedt, samen met <a href="https://www.jmvanlit.nl/" target="_blank">Joep van Lit</a>. Het paper is beschikbaar als <a href="https://osf.io/phr9s_v1" target="_blank">pre-print 📝</a>.</li>
+          <li><strong>Kiezerspercepties van partijuniteit en verdeeldheid</strong> — worden partijen als intern verdeeld ervaren en zijn er electorale gevolgen, samen met <a href="https://www.rug.nl/staff/r.l.van.well/" target="_blank">Rick van Well</a>.</li>
+          <li><strong>Kiesstelsel en genderpariteit</strong> — hoe beïnvloeden verschillende kiesstelsels de verkiezing van vrouwen, samen met Petra Meier en Petra Ahrens.</li>
+        </ul>
+      </div>
+      <div class="tags" style="margin-top:1rem;">
+        <span class="tag gender"><span class="en">Gender &amp; politics</span><span class="nl">Gender &amp; politiek</span></span>
+        <span class="tag candidate"><span class="en">Candidate selection</span><span class="nl">Kandidaatselectie</span></span>
+        <span class="tag violence"><span class="en">Political violence</span><span class="nl">Politiek geweld</span></span>
+        <span class="tag electoral"><span class="en">Electoral systems</span><span class="nl">Kiesstelsel</span></span>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<footer>© 2026 Rozemarijn van Dijk · Hosted on Netlify</footer>
+</body>
+</html>

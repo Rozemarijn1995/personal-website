@@ -1,0 +1,163 @@
+/* ── ROZEMARIJN VAN DIJK — shared stylesheet ── */
+
+:root {
+  --green-dark:   #2d6a4f;
+  --green-mid:    #40916c;
+  --green-accent: #52b788;
+  --green-pale:   #d8f3dc;
+  --text:         #111827;
+  --text-muted:   #4b5563;
+  --text-light:   #9ca3af;
+  --bg:           #ffffff;
+  --bg-subtle:    #f9fafb;
+  --border:       #e5e7eb;
+  --max-w:        780px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16.5px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── BILINGUAL ── */
+body.lang-en .nl { display: none !important; }
+body.lang-nl .en { display: none !important; }
+
+/* ── NAV ── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.93);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  gap: 1rem;
+}
+.nav-brand {
+  font-weight: 600; font-size: 1rem;
+  color: var(--text); letter-spacing: -0.01em;
+  text-decoration: none; flex-shrink: 0;
+}
+.nav-links { display: flex; gap: 1.8rem; list-style: none; }
+.nav-links a {
+  font-size: 0.88rem; color: var(--text-muted);
+  text-decoration: none; transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--green-dark); }
+.nav-links a.active { color: var(--green-dark); font-weight: 500; }
+
+/* Language toggle */
+.lang-toggle {
+  display: flex; align-items: center;
+  gap: 0; border: 1px solid var(--border);
+  border-radius: 6px; overflow: hidden;
+  flex-shrink: 0;
+}
+.lang-toggle button {
+  background: none; border: none;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.78rem; font-weight: 500;
+  font-family: inherit;
+  color: var(--text-muted); cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.lang-toggle button:first-child { border-right: 1px solid var(--border); }
+.lang-toggle button.active { background: var(--green-dark); color: #fff; }
+.lang-toggle button:hover:not(.active) { background: var(--bg-subtle); }
+
+/* ── LAYOUT ── */
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; }
+.page-content { padding: 4rem 0 5rem; }
+
+/* ── PAGE TITLE (subpages) ── */
+.page-title {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.15;
+}
+.page-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* ── SECTION LABEL ── */
+.section-label {
+  font-size: 0.72rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--text-light); margin-bottom: 2rem;
+}
+
+/* ── LINKS ── */
+a.green { color: var(--green-mid); text-decoration: none; font-weight: 500; }
+a.green:hover { text-decoration: underline; }
+
+/* ── BUTTON ── */
+.btn {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font-size: 0.85rem; font-weight: 500;
+  padding: 0.48rem 1.1rem; border-radius: 6px;
+  background: var(--green-dark); color: #fff;
+  text-decoration: none; transition: background 0.15s;
+  font-family: inherit;
+}
+.btn:hover { background: var(--green-mid); }
+
+/* ── TAGS ── */
+.tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag {
+  font-size: 0.76rem; font-weight: 500;
+  padding: 0.24rem 0.7rem; border-radius: 999px;
+  background: var(--bg-subtle); border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+/* All topic tags: uniform green style */
+.tag.gender, .tag.candidate, .tag.violence,
+.tag.party, .tag.media, .tag.electoral, .tag.other {
+  border-color: var(--green-accent);
+  background: #fff;
+  color: var(--green-dark);
+}
+
+/* Clickable tag filter */
+.tag-filter .tag {
+  cursor: pointer; transition: opacity 0.15s, transform 0.1s;
+  user-select: none;
+}
+.tag-filter .tag:hover { opacity: 0.8; }
+.tag-filter .tag.active { box-shadow: 0 0 0 2px currentColor; }
+
+/* ── CALLOUT ASIDES (bird, conferences) ── */
+.bird-aside {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.85rem;
+  background: var(--green-pale);
+  border: 1px solid var(--green-accent);
+  border-radius: 6px;
+  font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;
+}
+.bird-aside a { color: var(--green-dark); text-decoration: none; font-weight: 500; }
+.bird-aside a:hover { text-decoration: underline; }
+
+/* ── FOOTER ── */
+footer {
+  padding: 2rem; text-align: center;
+  font-size: 0.78rem; color: var(--text-light);
+  border-top: 1px solid var(--border);
+}

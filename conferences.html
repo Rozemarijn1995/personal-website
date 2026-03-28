@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conferences · Rozemarijn van Dijk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+  <script src="lang.js"></script>
+  <style>
+    #map {
+      width: 100%; height: 440px;
+      border-radius: 10px; border: 1px solid var(--border);
+      margin: 1.8rem 0 0.5rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .map-legend {
+      display: flex; gap: 1.4rem; font-size: 0.78rem;
+      color: var(--text-muted); margin-bottom: 2rem; flex-wrap: wrap;
+    }
+    .map-legend span { display: flex; align-items: center; gap: 0.4rem; }
+    .legend-dot {
+      display: inline-block; width: 11px; height: 11px;
+      border-radius: 50%; border: 2px solid #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.25); flex-shrink: 0;
+    }
+
+    .conf-section { margin-top: 2rem; }
+    .conf-section-title {
+      font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--text-light);
+      margin-bottom: 0.8rem; margin-top: 2rem; display: block;
+    }
+    .conf-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    .conf-table th {
+      font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--text-light);
+      text-align: left; padding: 0 1.2rem 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .conf-table td {
+      padding: 0.7rem 1.2rem 0.7rem 0;
+      border-bottom: 1px solid var(--bg-subtle);
+      vertical-align: top; line-height: 1.5;
+    }
+    .conf-table tr:last-child td { border-bottom: none; }
+    .conf-name { font-weight: 500; color: var(--text); }
+    .conf-place { color: var(--text-muted); font-size: 0.82rem; margin-top: 0.1rem; }
+    .conf-role {
+      display: inline-block; font-size: 0.7rem; font-weight: 600;
+      padding: 0.1rem 0.4rem; border-radius: 3px; margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+    .role-organizer { background: #dbeafe; color: #1e40af; }
+    .role-discussant { background: #f3e8ff; color: #6b21a8; }
+    .badge-upcoming {
+      display: inline-block; font-size: 0.7rem; font-weight: 600;
+      padding: 0.12rem 0.45rem; border-radius: 3px;
+      background: var(--green-pale); border: 1px solid var(--green-accent);
+      color: var(--green-dark); margin-left: 0.35rem; vertical-align: middle;
+    }
+
+    /* Leaflet popup */
+    .leaflet-popup-content-wrapper {
+      border-radius: 8px !important;
+      font-family: 'Inter', sans-serif !important;
+      font-size: 0.82rem !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12) !important;
+    }
+    .popup-title { font-weight: 600; color: #1f2937; margin-bottom: 0.15rem; }
+    .popup-conf { font-size: 0.78rem; color: #6b7280; }
+    .popup-upcoming { display:inline-block; margin-top:0.35rem; font-size:0.7rem; font-weight:600; padding:0.1rem 0.4rem; border-radius:3px; background:#d1fae5; color:#065f46; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Rozemarijn van Dijk</a>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="en">Home</span><span class="nl">Home</span></a></li>
+    <li><a href="research.html"><span class="en">Research</span><span class="nl">Onderzoek</span></a></li>
+    <li><a href="publications.html"><span class="en">Publications</span><span class="nl">Publicaties</span></a></li>
+    <li><a href="outreach.html"><span class="en">Outreach</span><span class="nl">Media</span></a></li>
+    <li><a href="contact.html"><span class="en">Contact</span><span class="nl">Contact</span></a></li>
+  </ul>
+  <div class="lang-toggle">
+    <button data-lang-btn="en" onclick="switchLang('en')">EN</button>
+    <button data-lang-btn="nl" onclick="switchLang('nl')">NL</button>
+  </div>
+</nav>
+
+<div class="page-content">
+  <div class="container">
+    <div class="page-title"><span class="en">On the road</span><span class="nl">Onderweg</span></div>
+    <p class="page-subtitle">
+      <span class="en">A map of every conference city I've presented at — and where I'm heading next.</span>
+      <span class="nl">Een kaart van alle conferentiesteden waar ik heb gepresenteerd — en waar ik naartoe ga.</span>
+    </p>
+
+    <div id="map"></div>
+
+    <div class="map-legend">
+      <span><span class="legend-dot" style="background:#2d6a4f;"></span> <span class="en">upcoming 2026</span><span class="nl">komend 2026</span></span>
+      <span><span class="legend-dot" style="background:#6b7280;"></span> <span class="en">past conference</span><span class="nl">eerdere conferentie</span></span>
+      <span><span class="legend-dot" style="background:#60a5fa;"></span> <span class="en">research stay</span><span class="nl">onderzoeksverblijf</span></span>
+    </div>
+
+    <!-- Upcoming 2026 -->
+    <span class="conf-section-title"><span class="en">Upcoming · 2026</span><span class="nl">Komend · 2026</span></span>
+    <table class="conf-table">
+      <thead>
+        <tr>
+          <th style="width:38%"><span class="en">Conference</span><span class="nl">Conferentie</span></th>
+          <th><span class="en">Paper(s)</span><span class="nl">Paper(s)</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="conf-name">EPSS<span class="badge-upcoming">2026</span></div>
+            <div class="conf-place">Belfast</div>
+          </td>
+          <td><span class="en">Influence strategies of intraparty groups</span><span class="nl">Invloedstrategieën van intrapartijgroepen</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="conf-name">ECPG<span class="badge-upcoming">2026</span></div>
+            <div class="conf-place">Newcastle</div>
+          </td>
+          <td>
+            <span class="en">Women's organisations in political parties; book project with S. Ammassari &amp; M. Grahn</span>
+            <span class="nl">Vrouwenorganisaties in politieke partijen; boekproject met S. Ammassari &amp; M. Grahn</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="conf-name">ECPR General Conference<span class="badge-upcoming">2026</span></div>
+            <div class="conf-place">Kraków</div>
+          </td>
+          <td>
+            <span class="en">Why people don't join political parties; internal party organisation and responsiveness</span>
+            <span class="nl">Waarom mensen geen lid worden van politieke partijen; interne partijorganisatie en responsiviteit</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Past -->
+    <span class="conf-section-title"><span class="en">Past presentations</span><span class="nl">Eerdere presentaties</span></span>
+    <table class="conf-table">
+      <thead>
+        <tr>
+          <th style="width:20%"><span class="en">Year</span><span class="nl">Jaar</span></th>
+          <th style="width:38%"><span class="en">Conference</span><span class="nl">Conferentie</span></th>
+          <th><span class="en">Location</span><span class="nl">Locatie</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2024</td>
+          <td><div class="conf-name">ECPG</div></td>
+          <td class="conf-place">Ghent</td>
+        </tr>
+        <tr>
+          <td>2024</td>
+          <td>
+            <div class="conf-name">ECPR Joint Sessions<span class="conf-role role-discussant"><span class="en">discussant</span><span class="nl">discussant</span></span></div>
+          </td>
+          <td class="conf-place">Lüneburg</td>
+        </tr>
+        <tr>
+          <td>2024</td>
+          <td>
+            <div class="conf-name">PoliticologenEtmaal<span class="conf-role role-organizer"><span class="en">workshop org.</span><span class="nl">workshoporg.</span></span><span class="conf-role role-discussant"><span class="en">discussant</span><span class="nl">discussant</span></span></div>
+          </td>
+          <td class="conf-place">Maastricht</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>
+            <div class="conf-name">EPSA<span class="conf-role role-discussant"><span class="en">discussant</span><span class="nl">discussant</span></span></div>
+          </td>
+          <td class="conf-place">Glasgow</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>
+            <div class="conf-name">DPSA<span class="conf-role role-discussant"><span class="en">discussant</span><span class="nl">discussant</span></span></div>
+          </td>
+          <td class="conf-place">Nyborg</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td><div class="conf-name"><span class="en">Standing Group on Parliaments</span><span class="nl">Standing Group on Parliaments</span></div></td>
+          <td class="conf-place">Vienna</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>
+            <div class="conf-name">PoliticologenEtmaal<span class="conf-role role-discussant"><span class="en">discussant</span><span class="nl">discussant</span></span></div>
+          </td>
+          <td class="conf-place">Leuven</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>
+            <div class="conf-name">ECPG</div>
+          </td>
+          <td class="conf-place">Ljubljana</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>
+            <div class="conf-name">ECPR Joint Sessions<span class="conf-role role-discussant"><span class="en">discussant</span><span class="nl">discussant</span></span></div>
+          </td>
+          <td class="conf-place">Edinburgh</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td><div class="conf-name">ECPG</div></td>
+          <td class="conf-place">Amsterdam</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td><div class="conf-name">PoliticologenEtmaal</div></td>
+          <td class="conf-place">Antwerp</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td><div class="conf-name"><span class="en">Graduate Conference on Party Research</span><span class="nl">Graduate Conference on Party Research</span></div></td>
+          <td class="conf-place">Düsseldorf</td>
+        </tr>
+        <tr>
+          <td>2017</td>
+          <td><div class="conf-name">PoliticologenEtmaal</div></td>
+          <td class="conf-place">Leiden</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Research stays -->
+    <span class="conf-section-title"><span class="en">Research stays</span><span class="nl">Onderzoeksverblijven</span></span>
+    <table class="conf-table">
+      <thead>
+        <tr>
+          <th style="width:20%"><span class="en">Year</span><span class="nl">Jaar</span></th>
+          <th><span class="en">Location</span><span class="nl">Locatie</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2024</td>
+          <td><div class="conf-name"><span class="en">University of Amsterdam</span><span class="nl">Universiteit van Amsterdam</span></div></td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td><div class="conf-name"><span class="en">University of Copenhagen</span><span class="nl">Universiteit van Kopenhagen</span></div></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<footer>© 2026 Rozemarijn van Dijk · Hosted on Netlify</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function () {
+  var map = L.map('map', { zoomControl: true, scrollWheelZoom: false })
+    .setView([51.5, 10], 4);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="https://carto.com/">CARTO</a>',
+    maxZoom: 18
+  }).addTo(map);
+
+  function makeIcon(color) {
+    return L.divIcon({
+      className: '',
+      html: '<div style="width:13px;height:13px;border-radius:50%;background:' + color + ';border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.3);"></div>',
+      iconSize: [13, 13], iconAnchor: [6.5, 6.5], popupAnchor: [0, -9]
+    });
+  }
+
+  var icoUpcoming = makeIcon('#2d6a4f');
+  var icoPast     = makeIcon('#9ca3af');
+  var icoStay     = makeIcon('#60a5fa');
+
+  var conferences = [
+    // Upcoming 2026
+    { lat: 54.597, lng: -5.930, city: 'Belfast',   conf: 'EPSS 2026',               type: 'upcoming' },
+    { lat: 54.978, lng: -1.618, city: 'Newcastle',  conf: 'ECPG 2026',               type: 'upcoming' },
+    { lat: 50.061, lng: 19.945, city: 'Kraków',     conf: 'ECPR General Conf. 2026', type: 'upcoming' },
+    // Past conferences
+    { lat: 51.054, lng:  3.717, city: 'Ghent',      conf: 'ECPG 2024',               type: 'past' },
+    { lat: 53.249, lng: 10.414, city: 'Lüneburg',   conf: 'ECPR Joint Sessions 2024',type: 'past' },
+    { lat: 50.851, lng:  5.691, city: 'Maastricht', conf: 'PoliticologenEtmaal 2024', type: 'past' },
+    { lat: 55.864, lng: -4.252, city: 'Glasgow',    conf: 'EPSA 2023',               type: 'past' },
+    { lat: 55.313, lng: 10.790, city: 'Nyborg',     conf: 'DPSA 2023',               type: 'past' },
+    { lat: 48.208, lng: 16.374, city: 'Vienna',     conf: 'Standing Group on Parliaments 2023', type: 'past' },
+    { lat: 50.880, lng:  4.701, city: 'Leuven',     conf: 'PoliticologenEtmaal 2023', type: 'past' },
+    { lat: 46.057, lng: 14.506, city: 'Ljubljana',  conf: 'ECPG 2022',               type: 'past' },
+    { lat: 55.953, lng: -3.188, city: 'Edinburgh',  conf: 'ECPR Joint Sessions 2022', type: 'past' },
+    { lat: 52.368, lng:  4.904, city: 'Amsterdam',  conf: 'ECPG 2019',               type: 'past' },
+    { lat: 51.219, lng:  4.403, city: 'Antwerp',    conf: 'PoliticologenEtmaal 2019', type: 'past' },
+    { lat: 51.222, lng:  6.776, city: 'Düsseldorf', conf: 'Graduate Conf. on Party Research 2019', type: 'past' },
+    { lat: 52.160, lng:  4.497, city: 'Leiden',     conf: 'PoliticologenEtmaal 2017', type: 'past' },
+    // Research stays
+    { lat: 52.368, lng:  4.904, city: 'Amsterdam',  conf: 'Research stay 2024',      type: 'stay' },
+    { lat: 55.676, lng: 12.568, city: 'Copenhagen', conf: 'Research stay 2023',      type: 'stay' },
+  ];
+
+  conferences.forEach(function (p) {
+    var icon = p.type === 'upcoming' ? icoUpcoming : p.type === 'stay' ? icoStay : icoPast;
+    var badge = p.type === 'upcoming' ? '<div><span class="popup-upcoming">upcoming</span></div>' : '';
+    L.marker([p.lat, p.lng], { icon: icon })
+      .bindPopup('<div class="popup-title">' + p.city + '</div><div class="popup-conf">' + p.conf + '</div>' + badge, { maxWidth: 200 })
+      .addTo(map);
+  });
+})();
+</script>
+</body>
+</html>

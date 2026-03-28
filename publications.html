@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications · Rozemarijn van Dijk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js"></script>
+  <style>
+    .pub-list { list-style: none; }
+    .pub-item { padding: 1.5rem 0; border-bottom: 1px solid var(--border); }
+    .pub-item:first-child { border-top: 1px solid var(--border); }
+    .pub-item.hidden { display: none; }
+    .pub-title { font-size: 1rem; font-weight: 500; color: var(--text); line-height: 1.5; margin-bottom: 0.4rem; }
+    .pub-title a { color: var(--text); text-decoration: none; }
+    .pub-title a:hover { color: var(--green-dark); text-decoration: underline; }
+    .pub-authors { font-size: 0.87rem; color: var(--text-muted); margin-bottom: 0.3rem; line-height: 1.6; }
+    .pub-authors a { color: var(--text-muted); text-decoration: none; border-bottom: 1px dotted var(--border); }
+    .pub-authors a:hover { color: var(--green-dark); border-color: var(--green-accent); }
+    .pub-authors strong { color: var(--text); }
+    .pub-venue { font-size: 0.87rem; color: var(--text-muted); font-style: italic; margin-bottom: 0.6rem; }
+    .pub-bottom { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem; }
+    .pub-link {
+      font-size: 0.75rem; font-weight: 500;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      color: var(--text-muted); text-decoration: none;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .pub-link:hover { border-color: var(--green-accent); color: var(--green-dark); }
+    .year-group { margin-bottom: 0.5rem; }
+    .year-marker { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin: 2.5rem 0 0; display: block; }
+
+    /* Section heading for peer-reviewed block */
+    .section-heading {
+      font-size: 1.1rem; font-weight: 600; color: var(--text);
+      margin: 2rem 0 0; padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--green-accent);
+      display: inline-block;
+    }
+
+    /* Abstract toggle */
+    .abstract-toggle {
+      font-size: 0.75rem; font-weight: 500;
+      padding: 0.2rem 0.55rem; border-radius: 4px;
+      border: 1px solid var(--border); background: none; cursor: pointer;
+      color: var(--text-muted); transition: border-color 0.15s, color 0.15s, background 0.15s;
+      line-height: 1;
+    }
+    .abstract-toggle:hover { border-color: var(--green-accent); color: var(--green-dark); }
+    .abstract-toggle.open { background: var(--green-pale); border-color: var(--green-accent); color: var(--green-dark); }
+    .abstract-body {
+      margin-top: 0.9rem; padding: 0.85rem 1rem;
+      background: var(--bg-subtle); border-radius: 6px;
+      border-left: 3px solid var(--green-accent);
+      font-size: 0.875rem; color: #374151; line-height: 1.8;
+      max-width: 680px;
+    }
+
+    /* NKO section */
+    .nko-section { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+    .nko-item { padding: 1.2rem 0; border-bottom: 1px solid var(--bg-subtle); }
+    .nko-item:first-child { border-top: 1px solid var(--bg-subtle); }
+    .nko-title { font-size: 0.97rem; font-weight: 500; color: var(--text); line-height: 1.5; margin-bottom: 0.3rem; }
+    .nko-authors { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.2rem; }
+    .nko-authors strong { color: var(--text); }
+    .nko-venue { font-size: 0.85rem; color: var(--text-muted); font-style: italic; }
+    .nko-status { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 4px; background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; margin-left: 0.5rem; }
+
+    /* Award badge */
+    .award-badge {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.72rem; font-weight: 600;
+      padding: 0.18rem 0.55rem; border-radius: 4px;
+      background: #fef9c3; border: 1px solid #fbbf24; color: #78350f;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Rozemarijn van Dijk</a>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="en">Home</span><span class="nl">Home</span></a></li>
+    <li><a href="research.html"><span class="en">Research</span><span class="nl">Onderzoek</span></a></li>
+    <li><a href="publications.html" class="active"><span class="en">Publications</span><span class="nl">Publicaties</span></a></li>
+    <li><a href="outreach.html"><span class="en">Outreach</span><span class="nl">Media</span></a></li>
+    <li><a href="contact.html"><span class="en">Contact</span><span class="nl">Contact</span></a></li>
+  </ul>
+  <div class="lang-toggle">
+    <button data-lang-btn="en" onclick="switchLang('en')">EN</button>
+    <button data-lang-btn="nl" onclick="switchLang('nl')">NL</button>
+  </div>
+</nav>
+
+<div class="page-content">
+  <div class="container">
+    <div class="page-title"><span class="en">Publications</span><span class="nl">Publicaties</span></div>
+
+    <div class="section-heading"><span class="en">Peer-reviewed publications</span><span class="nl">Peer-reviewed publicaties</span></div>
+
+    <span class="year-marker">2026</span>
+    <ul class="pub-list" id="publist">
+
+      <li class="pub-item">
+        <div class="pub-title">Greater intra-party democracy in candidate selection has different effects on gender, ethnicity and class</div>
+        <div class="pub-authors">
+          <a href="https://www.whatthebutlersaw.org/" target="_blank">C. Butler</a>,
+          <strong>Rozemarijn van Dijk</strong>,
+          <a href="https://www.nuffield.ox.ac.uk/people/profiles/marta-miori/" target="_blank">M. Miori</a>,
+          <a href="https://www.robertford.net/" target="_blank">R. Ford</a>
+        </div>
+        <div class="pub-venue">Electoral Studies</div>
+        <div class="pub-bottom">
+          <a href="https://doi.org/10.1016/j.electstud.2026.103056" class="pub-link" target="_blank">DOI</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="en">Abstract ▾</span><span class="nl">Abstract ▾</span></button>
+        </div>
+        <div class="abstract-body" hidden>
+          <span class="en"><!-- Add abstract here --></span>
+          <span class="nl"><!-- Voeg abstract toe --></span>
+        </div>
+      </li>
+
+    </ul>
+
+    <span class="year-marker">2025</span>
+    <ul class="pub-list">
+
+      <li class="pub-item">
+        <div class="pub-title"><a href="https://doi.org/10.1093/pa/gsaf040" target="_blank">Interrupting the interruptions. How women transform the parliamentary debate</a></div>
+        <div class="pub-authors">
+          <strong>Rozemarijn van Dijk</strong>,
+          <a href="https://www.zeljkopoljak.com/" target="_blank">Ž. Poljak</a>
+        </div>
+        <div class="pub-venue">Parliamentary Affairs</div>
+        <div class="pub-bottom">
+          <a href="https://doi.org/10.1093/pa/gsaf040" class="pub-link" target="_blank">DOI</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="en">Abstract ▾</span><span class="nl">Abstract ▾</span></button>
+        </div>
+        <div class="abstract-body" hidden>
+          <span class="en"><!-- Add abstract here --></span>
+          <span class="nl"><!-- Voeg abstract toe --></span>
+        </div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-title">Targeting politicians, triggering participation? The (gendered) effect of violence against politicians on citizens' political engagement</div>
+        <div class="pub-authors">
+          <strong>Rozemarijn van Dijk</strong>,
+          <a href="https://politicalscience.ku.dk/staff/academic_staff/?pure=en/persons/98886" target="_blank">K. Kosiara-Pedersen</a>
+        </div>
+        <div class="pub-venue">European Journal of Politics and Gender, pp. 1–26</div>
+        <div class="pub-bottom">
+          <a href="https://bristoluniversitypressdigital.com/view/journals/ejpg/aop/article-10.1332-20501442Y2025D000000033/article-10.1332-20501442Y2025D000000033.xml" class="pub-link" target="_blank">DOI</a>
+          <a href="https://osf.io/u9znc" class="pub-link" target="_blank">pre-registration</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="en">Abstract ▾</span><span class="nl">Abstract ▾</span></button>
+        </div>
+        <div class="abstract-body" hidden>
+          <span class="en"><!-- Add abstract here --></span>
+          <span class="nl"><!-- Voeg abstract toe --></span>
+        </div>
+      </li>
+
+    </ul>
+
+    <span class="year-marker">2024</span>
+    <ul class="pub-list">
+
+      <li class="pub-item">
+        <div class="pub-title"><a href="https://doi.org/10.1057/s41269-023-00319-1" target="_blank">Exploring the effect of personalized voting on affective polarization: Prototypical leadership and campaign effects</a></div>
+        <div class="pub-authors">
+          <a href="https://www.uantwerpen.be/nl/personeel/peter-thijssen/" target="_blank">P. Thijssen</a>,
+          <strong>Rozemarijn van Dijk</strong>,
+          <a href="https://www.uva.nl/profiel/v/a/p.f.a.vanerkel/p.f.a.van-erkel.html" target="_blank">P. Van Erkel</a>
+        </div>
+        <div class="pub-venue">Acta Politica</div>
+        <div class="pub-bottom">
+          <a href="https://doi.org/10.1057/s41269-023-00319-1" class="pub-link" target="_blank">DOI</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="en">Abstract ▾</span><span class="nl">Abstract ▾</span></button>
+        </div>
+        <div class="abstract-body" hidden>
+          <span class="en"><!-- Add abstract here --></span>
+          <span class="nl"><!-- Voeg abstract toe --></span>
+        </div>
+      </li>
+
+    </ul>
+
+    <span class="year-marker">2023</span>
+    <ul class="pub-list">
+
+      <li class="pub-item">
+        <div class="pub-title"><a href="https://doi.org/10.1177/10776990231211806" target="_blank">A Long March Towards Equality: Predicting the Presence of Women in Television News</a></div>
+        <div class="pub-authors">
+          K. Beckers,
+          <strong>Rozemarijn van Dijk</strong>,
+          <a href="https://www.uantwerpen.be/nl/personeel/peter-vanaelst/" target="_blank">P. Van Aelst</a>,
+          K. De Swert
+        </div>
+        <div class="pub-venue">Journalism &amp; Mass Communication Quarterly</div>
+        <div class="pub-bottom">
+          <a href="https://doi.org/10.1177/10776990231211806" class="pub-link" target="_blank">DOI</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="en">Abstract ▾</span><span class="nl">Abstract ▾</span></button>
+        </div>
+        <div class="abstract-body" hidden>
+          <span class="en"><!-- Add abstract here --></span>
+          <span class="nl"><!-- Voeg abstract toe --></span>
+        </div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-title"><a href="https://doi.org/10.1016/j.wsif.2022.102669" target="_blank">Playing by the rules? The formal and informal rules of candidate selection</a></div>
+        <div class="pub-authors"><strong>Rozemarijn van Dijk</strong></div>
+        <div class="pub-venue">Women's Studies International Forum</div>
+        <div class="pub-bottom">
+          <a href="https://doi.org/10.1016/j.wsif.2022.102669" class="pub-link" target="_blank">DOI</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="en">Abstract ▾</span><span class="nl">Abstract ▾</span></button>
+        </div>
+        <div class="abstract-body" hidden>
+          <span class="en"><!-- Add abstract here --></span>
+          <span class="nl"><!-- Voeg abstract toe --></span>
+        </div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-title"><a href="https://doi.org/10.5553/PLC/.000064" target="_blank">Ambitious Women: Hidden within the Party?</a></div>
+        <div class="pub-authors"><strong>Rozemarijn van Dijk</strong></div>
+        <div class="pub-venue">Politics of the Low Countries</div>
+        <div class="pub-bottom">
+          <a href="https://doi.org/10.5553/PLC/.000064" class="pub-link" target="_blank">DOI</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="en">Abstract ▾</span><span class="nl">Abstract ▾</span></button>
+        </div>
+        <div class="abstract-body" hidden>
+          <span class="en"><!-- Add abstract here --></span>
+          <span class="nl"><!-- Voeg abstract toe --></span>
+        </div>
+      </li>
+
+    </ul>
+
+    <span class="year-marker">2022</span>
+    <ul class="pub-list">
+
+      <li class="pub-item">
+        <div class="pub-title"><a href="https://tijdschriften.boombestuurskunde.nl/tijdschrift/PLC/2022/1/PLC-D-20-00007.pdf" target="_blank">Fit for Office? The Perception of Female and Male Politicians by Dutch Voters</a></div>
+        <div class="pub-authors">
+          <strong>Rozemarijn van Dijk</strong>,
+          <a href="https://www.universiteitleiden.nl/medewerkers/joop-van-holsteijn" target="_blank">J. van Holsteyn</a>
+        </div>
+        <div class="pub-venue">Politics of the Low Countries</div>
+        <div class="pub-bottom">
+          <a href="https://tijdschriften.boombestuurskunde.nl/tijdschrift/PLC/2022/1/PLC-D-20-00007.pdf" class="pub-link" target="_blank">PDF</a>
+          <a href="https://doi.org/10.5553/PLC/.000028" class="pub-link" target="_blank">DOI</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="en">Abstract ▾</span><span class="nl">Abstract ▾</span></button>
+        </div>
+        <div class="abstract-body" hidden>
+          <span class="en"><!-- Add abstract here --></span>
+          <span class="nl"><!-- Voeg abstract toe --></span>
+        </div>
+      </li>
+
+    </ul>
+
+    <span class="year-marker">2021</span>
+    <ul class="pub-list">
+
+      <li class="pub-item">
+        <div class="pub-title"><a href="https://doi.org/10.1057/s41269-021-00208-5" target="_blank">Reporting the polls: the quality of media reporting of vote intention polls in the Netherlands</a></div>
+        <div class="pub-authors">
+          <a href="https://www.tomlouwerse.nl/" target="_blank">T. Louwerse</a>,
+          <strong>Rozemarijn van Dijk</strong>
+        </div>
+        <div class="pub-venue">Acta Politica</div>
+        <div class="pub-bottom">
+          <a href="https://doi.org/10.1057/s41269-021-00208-5" class="pub-link" target="_blank">DOI</a>
+          <a href="https://doi.org/10.7910/DVN/1QX5F2" class="pub-link" target="_blank">Data &amp; Code</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="en">Abstract ▾</span><span class="nl">Abstract ▾</span></button>
+        </div>
+        <div class="abstract-body" hidden>
+          <span class="en"><!-- Add abstract here --></span>
+          <span class="nl"><!-- Voeg abstract toe --></span>
+        </div>
+      </li>
+
+    </ul>
+
+    <!-- WORKING PAPERS -->
+    <div class="nko-section">
+      <div class="section-heading"><span class="en">Working Papers</span><span class="nl">Working Papers</span></div>
+      <p style="font-size:0.9rem; color:var(--text-muted); margin:0.75rem 0 1.2rem; line-height:1.6;">
+        <span class="en">Pre-prints and papers under review.</span>
+        <span class="nl">Pre-prints en papers onder review.</span>
+      </p>
+
+      <div class="nko-item">
+        <div class="nko-title">
+          <span class="en">Unrepresentative members, unrepresentative lists?</span>
+          <span class="nl">Niet-representatieve leden, niet-representatieve lijsten?</span>
+        </div>
+        <div class="nko-authors"><strong>Rozemarijn van Dijk</strong></div>
+        <div class="nko-venue" style="margin-bottom:0.5rem;">
+          <span class="en">Under review</span>
+          <span class="nl">Onder review</span>
+        </div>
+      </div>
+
+      <div class="nko-item">
+        <div class="nko-title">
+          <span class="en">Mobilizing or demobilizing? A factorial survey experiment on violence against politicians and citizens' political participation</span>
+          <span class="nl">Mobiliserend of demobiliserend? Een factorieel surveyexperiment over geweld tegen politici en burgerparticipatie</span>
+        </div>
+        <div class="nko-authors">
+          <strong>Rozemarijn van Dijk</strong>,
+          <a href="https://www.jmvanlit.nl/" target="_blank">J. van Lit</a>
+        </div>
+        <div class="nko-venue" style="margin-bottom:0.5rem;">
+          <span class="en">Pre-print available · Under review</span>
+          <span class="nl">Pre-print beschikbaar · Onder review</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:0.6rem; flex-wrap:wrap;">
+          <a href="https://osf.io/phr9s_v1" class="pub-link" target="_blank">Pre-print</a>
+          <span class="award-badge">🏆 <span class="en">Best Paper Award, ECPR Standing Group on Political Violence · 2025</span><span class="nl">Best Paper Award, ECPR Standing Group on Political Violence · 2025</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- NKO CONTRIBUTIONS -->
+    <div class="nko-section">
+      <div class="section-heading"><span class="en">Dutch Election Studies</span><span class="nl">Kiezersonderzoek</span></div>
+      <p style="font-size:0.9rem; color:var(--text-muted); margin:0.75rem 0 1.2rem; line-height:1.6;">
+        <span class="en">Non-peer-reviewed contributions to the Dutch Parliamentary Election Study (NKO/SKON).</span>
+        <span class="nl">Niet peer-reviewed bijdragen aan het Nationaal Kiezersonderzoek (NKO/SKON).</span>
+      </p>
+
+      <div class="nko-item">
+        <div class="nko-title">
+          <span class="en">Perceptions of party division among voters</span>
+          <span class="nl">Kiezerspercepties van partijverdeeldheid</span>
+          <span class="nko-status"><span class="en">Ongoing</span><span class="nl">Lopend</span></span>
+        </div>
+        <div class="nko-authors">
+          <strong>Rozemarijn van Dijk</strong>,
+          <a href="https://www.rug.nl/staff/r.l.van.well/" target="_blank">R. van Well</a>
+        </div>
+        <div class="nko-venue">
+          <span class="en">NKO (Dutch Parliamentary Election Study) · 2025</span>
+          <span class="nl">NKO (Nationaal Kiezersonderzoek) · 2025</span>
+        </div>
+      </div>
+
+      <div class="nko-item">
+        <div class="nko-title">Verruwing in de politiek: hoe kiezers conflict en geweld in de politiek ervaren</div>
+        <div class="nko-authors">
+          <strong>Rozemarijn van Dijk</strong>,
+          E.S. van der Goot, Z. Runderkamp, E.M. Turkenburg, C. Vargiu
+        </div>
+        <div class="nko-venue">
+          <span class="en">In: <em>De verkiezingen van 2023: 'Van Onderstroom naar Doorbraak: Onvrede en Migratie'</em>, pp. 46–54. Stichting KiezersOnderzoek Nederland (SKON), 2024.</span>
+          <span class="nl">In: <em>De verkiezingen van 2023: 'Van Onderstroom naar Doorbraak: Onvrede en Migratie'</em>, pp. 46–54. Stichting KiezersOnderzoek Nederland (SKON), 2024.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>© 2026 Rozemarijn van Dijk · Hosted on Netlify</footer>
+
+<script>
+window.toggleAbstract = function (btn) {
+  var body = btn.closest('.pub-item').querySelector('.abstract-body');
+  var isOpen = !body.hidden;
+  body.hidden = isOpen;
+  btn.classList.toggle('open', !isOpen);
+  btn.querySelector('.en').textContent = isOpen ? 'Abstract ▾' : 'Abstract ▴';
+  btn.querySelector('.nl').textContent = isOpen ? 'Abstract ▾' : 'Abstract ▴';
+};
+
+</script>
+</body>
+</html>

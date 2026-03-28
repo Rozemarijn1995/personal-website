@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rozemarijn van Dijk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js"></script>
+  <style>
+    #home { padding-top: 5.5rem; padding-bottom: 4rem; }
+    .hero-top { display:flex; align-items:center; gap:1.8rem; margin-bottom:2.2rem; }
+    .avatar { width:80px; height:80px; border-radius:50%; object-fit:cover; border:2.5px solid var(--green-accent); flex-shrink:0; background:var(--green-pale); }
+    .hero-name h1 { font-size:1.75rem; font-weight:600; letter-spacing:-0.025em; line-height:1.2; }
+    .hero-name .meta { margin-top:0.3rem; font-size:0.92rem; color:var(--text-muted); }
+    .hero-name .meta a { color:var(--green-mid); font-weight:500; text-decoration:none; }
+    .hero-name .meta a:hover { text-decoration:underline; }
+    .hero-body { font-size:1.02rem; color:#374151; line-height:1.82; max-width:660px; }
+    .hero-body p + p { margin-top:1rem; }
+    .hero-body a { color:var(--green-mid); text-decoration:none; font-weight:500; }
+    .hero-body a:hover { text-decoration:underline; }
+    .actions { display:flex; align-items:center; gap:1.4rem; margin-top:1.8rem; flex-wrap:wrap; }
+    .social-links { display:flex; gap:1.2rem; }
+    .social-links a { font-size:0.85rem; color:var(--text-muted); text-decoration:none; transition:color 0.15s; }
+    .social-links a:hover { color:var(--green-dark); }
+    .edu-inline { margin-top:2rem; padding-top:1.6rem; border-top:1px solid var(--border); display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+    .edu-inline h4 { font-size:0.72rem; font-weight:600; text-transform:uppercase; letter-spacing:0.12em; color:var(--text-light); margin-bottom:0.8rem; }
+    .edu-entry { margin-bottom:0.7rem; }
+    .edu-entry .deg { font-size:0.9rem; font-weight:500; }
+    .edu-entry .sch { font-size:0.82rem; color:var(--text-muted); }
+    .page-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:2.2rem; }
+    .page-card { padding:1.2rem 1.3rem; border:1px solid var(--border); border-radius:10px; text-decoration:none; background:var(--bg-subtle); transition:border-color 0.2s, box-shadow 0.2s; }
+    .page-card:hover { border-color:var(--green-accent); box-shadow:0 2px 8px rgba(45,106,79,0.08); }
+    .page-card .card-label { font-size:0.72rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-light); margin-bottom:0.4rem; }
+    .page-card .card-title { font-size:0.95rem; font-weight:500; color:var(--text); }
+    .page-card .card-desc { font-size:0.82rem; color:var(--text-muted); margin-top:0.2rem; line-height:1.5; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Rozemarijn van Dijk</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active"><span class="en">Home</span><span class="nl">Home</span></a></li>
+    <li><a href="research.html"><span class="en">Research</span><span class="nl">Onderzoek</span></a></li>
+    <li><a href="publications.html"><span class="en">Publications</span><span class="nl">Publicaties</span></a></li>
+    <li><a href="outreach.html"><span class="en">Outreach</span><span class="nl">Media</span></a></li>
+    <li><a href="contact.html"><span class="en">Contact</span><span class="nl">Contact</span></a></li>
+  </ul>
+  <div class="lang-toggle">
+    <button data-lang-btn="en" onclick="switchLang('en')">EN</button>
+    <button data-lang-btn="nl" onclick="switchLang('nl')">NL</button>
+  </div>
+</nav>
+
+<section id="home">
+  <div class="container">
+
+    <div class="hero-top">
+      <!-- Replace avatar.jpg with your new photo -->
+      <img class="avatar" src="images/profile.jpg" alt="Rozemarijn van Dijk"
+           onerror="this.src='content/en/authors/admin/avatar.jpg'">
+      <div class="hero-name">
+        <h1>Rozemarijn van Dijk</h1>
+        <div class="meta">
+          <span class="en">Postdoctoral researcher · <a href="https://www.gu.se/en" target="_blank">University of Gothenburg</a></span>
+          <span class="nl">Postdoctoraal onderzoeker · <a href="https://www.gu.se/en" target="_blank">Universiteit van Göteborg</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <div class="en">
+        <p>I'm a postdoctoral researcher on the <a href="https://www.gu.se/en/research/the-benefits-of-conflict-how-factions-can-enhance-political-parties-electoral-performance-intraparty" target="_blank">INTRAPARTY ERC project</a> at the University of Gothenburg. My work focuses on how groups within political parties try to shape their party's agenda — what influence strategies do they use, and what determines that choice?</p>
+        <p>My interest also lies in the underrepresentation of women in politics. I study how parties recruit candidates, what drives political ambition, and how political violence against politicians shapes participation. I defended my PhD at the University of Antwerp in 2025.</p>
+      </div>
+      <div class="nl">
+        <p>Ik ben postdoctoraal onderzoeker bij het <a href="https://www.gu.se/en/research/the-benefits-of-conflict-how-factions-can-enhance-political-parties-electoral-performance-intraparty" target="_blank">INTRAPARTY ERC-project</a> aan de Universiteit van Göteborg. Mijn werk richt zich op hoe groepen binnen politieke partijen de agenda van hun partij proberen te beïnvloeden — welke invloedstrategieën ze gebruiken en wat die keuze bepaalt.</p>
+        <p>Mijn onderzoeksinteresse richt zich op de ondervertegenwoordiging van vrouwen in de politiek. Ik onderzoek hoe partijen kandidaten werven, wat politieke ambitie aandrijft, en hoe politiek geweld participatie beïnvloedt. In 2025 verdedigde ik mijn proefschrift aan de Universiteit van Antwerpen.</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a href="uploads/resume_202506.pdf" class="btn" target="_blank">
+        <span class="en">↓ Download CV</span>
+        <span class="nl">↓ Download CV</span>
+      </a>
+      <div class="social-links">
+        <a href="mailto:rozemarijn.van.dijk@gu.se">Email</a>
+        <a href="https://scholar.google.be/citations?user=HwWTda8AAAAJ&hl=nl" target="_blank">Scholar</a>
+        <a href="https://www.linkedin.com/in/rozemarijnvandijk/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Rozemarijn1995" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap; gap:0.6rem; margin-top:1.6rem;">
+      <div class="bird-aside">
+        <span class="en">🚆 This year I'm heading to Belfast, Newcastle, and Kraków for conferences. <a href="conferences.html">See where I've been →</a></span>
+        <span class="nl">🚆 Dit jaar ga ik naar Belfast, Newcastle en Kraków. <a href="conferences.html">Bekijk waar ik ben geweest →</a></span>
+      </div>
+      <div class="bird-aside">
+        <span class="en">🐦 When I'm not at my desk, I'm outside with binoculars. 35 species spotted this year — <a href="https://ebird.org/profile/NDkwMTk2NA" target="_blank">and counting</a>.</span>
+        <span class="nl">🐦 Als ik niet achter mijn bureau zit, ben ik buiten met een verrekijker.  — al <a href="https://ebird.org/profile/NDkwMTk2NA" target="_blank">35 soorten</a> gespot dit jaar.</span>
+      </div>
+    </div>
+
+    <!-- Education inline (compact) -->
+    <div class="edu-inline">
+      <div>
+        <h4><span class="en">Education</span><span class="nl">Opleiding</span></h4>
+        <div class="edu-entry">
+          <div class="deg"><span class="en">PhD Political Science</span><span class="nl">PhD Politicologie</span></div>
+          <div class="sch">University of Antwerp · 2025</div>
+        </div>
+        <div class="edu-entry">
+          <div class="deg"><span class="en">Research Master Political Science</span><span class="nl">Research Master Politicologie</span></div>
+          <div class="sch">Leiden University · 2019</div>
+        </div>
+        <div class="edu-entry">
+          <div class="deg"><span class="en">Bachelor Political Science</span><span class="nl">Bachelor Politicologie</span></div>
+          <div class="sch">Leiden University · 2016</div>
+        </div>
+      </div>
+      <div>
+        <h4><span class="en">Research interests</span><span class="nl">Onderzoeksinteresses</span></h4>
+        <ul style="list-style:none;">
+          <li style="font-size:0.9rem;color:var(--text-muted);padding:0.18rem 0;"><span style="color:var(--green-accent);margin-right:0.5rem;">—</span><span class="en">Party politics</span><span class="nl">Partijpolitiek</span></li>
+          <li style="font-size:0.9rem;color:var(--text-muted);padding:0.18rem 0;"><span style="color:var(--green-accent);margin-right:0.5rem;">—</span><span class="en">Gender and politics</span><span class="nl">Gender en politiek</span></li>
+          <li style="font-size:0.9rem;color:var(--text-muted);padding:0.18rem 0;"><span style="color:var(--green-accent);margin-right:0.5rem;">—</span><span class="en">Candidate selection</span><span class="nl">Kandidaatselectie</span></li>
+          <li style="font-size:0.9rem;color:var(--text-muted);padding:0.18rem 0;"><span style="color:var(--green-accent);margin-right:0.5rem;">—</span><span class="en">Intraparty politics</span><span class="nl">Intrapartijpolitiek</span></li>
+          <li style="font-size:0.9rem;color:var(--text-muted);padding:0.18rem 0;"><span style="color:var(--green-accent);margin-right:0.5rem;">—</span><span class="en">Political violence</span><span class="nl">Politiek geweld</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Quick-nav cards -->
+    <div class="page-cards">
+      <a href="research.html" class="page-card">
+        <div class="card-label"><span class="en">Research</span><span class="nl">Onderzoek</span></div>
+        <div class="card-title"><span class="en">Current &amp; past projects</span><span class="nl">Huidige &amp; eerdere projecten</span></div>
+        <div class="card-desc"><span class="en">INTRAPARTY ERC project, dissertation, and ongoing collaborations.</span><span class="nl">INTRAPARTY ERC-project, proefschrift en lopende samenwerkingen.</span></div>
+      </a>
+      <a href="publications.html" class="page-card">
+        <div class="card-label"><span class="en">Publications</span><span class="nl">Publicaties</span></div>
+        <div class="card-title"><span class="en">9 peer-reviewed articles</span><span class="nl">9 peer-reviewed artikelen</span></div>
+        <div class="card-desc"><span class="en">Party politics, gender, candidate selection, and more.</span><span class="nl">Partijpolitiek, gender, kandidaatselectie en meer.</span></div>
+      </a>
+      <a href="outreach.html" class="page-card">
+        <div class="card-label"><span class="en">Outreach</span><span class="nl">Media</span></div>
+        <div class="card-title"><span class="en">Media &amp; popular writing</span><span class="nl">Media &amp; populair schrijven</span></div>
+        <div class="card-desc"><span class="en">Op-eds, blogs, interviews and radio appearances.</span><span class="nl">Opiniestukken, blogs, interviews en radio-optredens.</span></div>
+      </a>
+    </div>
+
+
+  </div>
+</section>
+
+<footer>© 2026 Rozemarijn van Dijk · Hosted on Netlify</footer>
+</body>
+</html>
