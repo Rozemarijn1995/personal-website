@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formatietool Basisonderwijs</title>
+  <meta name="description" content="Een tool voor het plannen van de formatie op de basisschool.">
+  <!-- Geen indexering door zoekmachines -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green-dark:   #2d6a4f;
+      --green-mid:    #40916c;
+      --green-accent: #52b788;
+      --green-pale:   #d8f3dc;
+      --text:         #111827;
+      --text-muted:   #4b5563;
+      --text-light:   #9ca3af;
+      --bg:           #ffffff;
+      --bg-subtle:    #f9fafb;
+      --border:       #e5e7eb;
+      --max-w:        780px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16.5px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+    }
+    .brand {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .brand-icon {
+      width: 28px; height: 28px;
+      background: var(--green-pale);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    /* ── LAYOUT ── */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: var(--green-pale);
+      color: var(--green-dark);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 {
+      font-size: 2.1rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--green-dark);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: var(--green-mid); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--green-dark);
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--green-accent);
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .btn-secondary:hover { background: var(--green-pale); }
+    .btn-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    /* ── SECTIONS ── */
+    section { margin-top: 3rem; }
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-light);
+      margin-bottom: 0.8rem;
+    }
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.7rem;
+    }
+    p { color: var(--text-muted); }
+    p + p { margin-top: 0.8rem; }
+
+    /* ── FEATURES GRID ── */
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.4rem;
+    }
+    .feature-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.3rem;
+    }
+    .feature-icon {
+      font-size: 1.4rem;
+      margin-bottom: 0.6rem;
+    }
+    .feature-card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+    .feature-card p {
+      font-size: 0.85rem;
+      line-height: 1.55;
+    }
+
+    /* ── HOW TO ── */
+    .steps {
+      margin-top: 1.4rem;
+      counter-reset: step;
+    }
+    .step {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .step:last-child { border-bottom: none; }
+    .step-num {
+      flex-shrink: 0;
+      width: 28px; height: 28px;
+      background: var(--green-pale);
+      color: var(--green-dark);
+      border-radius: 50%;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.1rem;
+    }
+    .step-body h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+    .step-body p {
+      font-size: 0.88rem;
+    }
+
+    /* ── DISCLAIMER ── */
+    .disclaimer {
+      background: #fff8f0;
+      border: 1px solid #fcd9a0;
+      border-radius: 10px;
+      padding: 1.3rem 1.5rem;
+      margin-top: 1.4rem;
+    }
+    .disclaimer p {
+      font-size: 0.88rem;
+      color: #92400e;
+      line-height: 1.6;
+    }
+    .disclaimer p + p { margin-top: 0.6rem; }
+
+    /* ── CREDIT ── */
+    .credit {
+      margin-top: 1.4rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.3rem 1.5rem;
+    }
+    .credit p { font-size: 0.88rem; }
+    .credit a { color: var(--green-mid); text-decoration: none; font-weight: 500; }
+    .credit a:hover { text-decoration: underline; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-light);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.6rem; }
+      .features { grid-template-columns: 1fr; }
+      .hero { padding-top: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="brand-icon">📅</div>
+    Formatietool Basisonderwijs
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag">Gratis tool</div>
+    <h1>Schoolrooster & formatieplanning voor de basisschool</h1>
+    <p class="hero-sub">
+      Een tool die je lokaal op je computer kunt gebruiken om de formatieverdeling van je basisschool overzichtelijk te plannen - zonder account, zonder abonnement, zonder dat er data ergens naartoe gaat.
+    </p>
+    <div class="btn-row">
+      <a href="formatietool.html" download class="btn-primary">
+        ⬇ Download de tool
+      </a>
+      <a href="formatietool.html" target="_blank" rel="noopener" class="btn-secondary">
+        ↗ Probeer online
+      </a>
+    </div>
+  </section>
+
+  <!-- WAT ZIT ERIN -->
+  <section>
+    <div class="section-label">Functionaliteit</div>
+    <h2>Wat zit er in de tool?</h2>
+    <p>De tool bestaat uit vier tabbladen die samen het complete plaatje geven van je schoolformatie.</p>
+    <div class="features">
+      <div class="feature-card">
+        <div class="feature-icon">👩‍🏫</div>
+        <h3>Leerkrachtendata</h3>
+        <p>Voer per leerkracht de naam, beschikbaarheid, werkdagen en drie voorkeurgroepen in. </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📆</div>
+        <h3>Rooster (week A &amp; B)</h3>
+        <p>Sleep namen tussen vakjes of gebruik de automatische planknop. Het systeem houdt rekening met voorkeur, continuïteit, FTE-balans en moeilijkste dag/groep eerst.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Analyse</h3>
+        <p>Bekijk in één oogopslag de capaciteit per dag, welke leerkrachten aan welke groep zijn gekoppeld, en hoeveel groepen elke leerkracht heeft.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📝</div>
+        <h3>Notities &amp; export</h3>
+        <p>Vrij notitieveld voor aantekeningen. Sla je rooster op als JSON-backup of exporteer naar Word. Meerdere roostervarianten naast elkaar vergelijken is ook mogelijk.</p>
+      </div>
+    </div>
+    <p style="margin-top:1rem; font-size:0.88rem;">De tool werkt met met voorbeelddata van 8 groepen (1/2A, 1/2B, groep 3 t/m 8) en 13 leerkrachten. Maar je kan de data gemakkelijk aanpassen aan je eigen school (voeg zowel klassen als leerkrachten toe).</p>
+  </section>
+
+  <!-- HOE GEBRUIK JE HET -->
+  <section>
+    <div class="section-label">Aan de slag</div>
+    <h2>Hoe gebruik je de tool?</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Download het HTML-bestand</h3>
+          <p>Klik op "Download de tool" hierboven. Je krijgt één HTML-bestand (<code>formatietool.html</code>) dat je opslaat op je eigen computer.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Open het bestand in je browser</h3>
+          <p>Dubbelklik op het bestand of sleep het naar een tabblad in Chrome, Firefox of Edge. Er is geen installatie of internet nodig.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Voer de leerkrachtengegevens in</h3>
+          <p>Ga naar tab 1 en vul per leerkracht de naam, FTE en werkdagen in. Geef ook voorkeurgroepen op voor automatische planning.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Plan het rooster</h3>
+          <p>Gebruik tab 2 om handmatig namen te slepen, of klik op "Auto-plan" voor een automatisch gegenereerd rooster op basis van je instellingen.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Sla op en exporteer</h3>
+          <p>Sla je werk tussentijds op als JSON-backup (zodat je later verder kunt) en exporteer het definitieve rooster naar Word als je klaar bent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- CREDIT -->
+  <section>
+    <div class="section-label">Over deze tool</div>
+    <h2>Hoe is dit gemaakt?</h2>
+    <div class="credit">
+      <p>
+  Deze tool is gemaakt als een soort persoonlijk project om het werk van mijn vader te helpen. 
+  De tool wordt aangeboden zoals ze is, zonder enige garantie op correctheid.
+</p>
+
+<p>
+  Ik ben geen softwareontwikkelaar van beroep (als je wel wilt weten wat ik doe, kun je mijn 
+  <a href="https://www.rozemarijnvandijk.eu" target="_blank" rel="noopener">website</a> bekijken). 
+  Ik heb de tool 
+  <a href="https://ivdnt.org/actueel/woorden-van-de-week/nieuw-woord-van-de-week/vibecoden/" target="_blank" rel="noopener">‘gevibecode’</a> 
+  met behulp van AI. Er kunnen bugs in zitten, dus controleer de uitkomsten altijd zelf voordat je het rooster definitief vaststelt.
+</p>
+
+<p>
+  Er worden geen gegevens opgeslagen of verzonden. Alles wat je invoert, blijft op jouw computer.
+</p>
+
+<p>
+  Suggesties of feedback? Je kunt me mailen via 
+  <a href="mailto:rozemarijn1995@gmail.com">rozemarijn1995@gmail.com</a>.
+</p>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  Formatietool Basisonderwijs &mdash; gemaakt door Rozemarijn van Dijk &mdash; ⏱️ Laatst geüpdatet op <strong>30 maart</strong>
+</footer>
+
+</body>
+</html>
