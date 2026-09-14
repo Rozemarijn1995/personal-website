@@ -280,8 +280,9 @@
   var map = L.map('map', { zoomControl: true, scrollWheelZoom: false })
     .setView([51.5, 10], 4);
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_3k2e_1_2f1779f274fbf84726b4cab2', {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="https://carto.com/">CARTO</a>',
+    subdomains: 'abcd',
     maxZoom: 18
   }).addTo(map);
 
