@@ -107,32 +107,28 @@
       <span><span class="legend-dot" style="background:#60a5fa;"></span> <span class="en">research stay</span><span class="nl">onderzoeksverblijf</span></span>
     </div>
 
-    <!-- Upcoming 2026 -->
-    <span class="conf-section-title"><span class="en">Upcoming · 2026</span><span class="nl">Komend · 2026</span></span>
+    <!-- Upcoming: research visit -->
+    <span class="conf-section-title"><span class="en">Upcoming</span><span class="nl">Komend</span></span>
     <table class="conf-table">
       <thead>
         <tr>
-          <th style="width:38%"><span class="en">Conference</span><span class="nl">Conferentie</span></th>
-          <th><span class="en">Paper(s)</span><span class="nl">Paper(s)</span></th>
+          <th style="width:38%"><span class="en">Research visit</span><span class="nl">Onderzoeksverblijf</span></th>
+          <th><span class="en">Details</span><span class="nl">Details</span></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>
-            <div class="conf-name">ECPR General Conference<span class="badge-upcoming">2026</span></div>
-            <div class="conf-place">Kraków · September</div>
+            <div class="conf-name">King's College London<span class="badge-upcoming"><span class="en">upcoming</span><span class="nl">komend</span></span></div>
+            <div class="conf-place">London · 26 Sep – 11 Oct 2026</div>
           </td>
           <td>
-            <span class="en">Why people don't join political parties; internal party organisation and responsiveness</span>
-            <span class="nl">Waarom mensen geen lid worden van politieke partijen; interne partijorganisatie en responsiviteit</span>
+            <span class="en">Hosted by Anne Rasmussen — collecting party statutes from party archives.</span>
+            <span class="nl">Op uitnodiging van Anne Rasmussen — verzamelen van partijstatuten in partijarchieven.</span>
           </td>
         </tr>
       </tbody>
     </table>
-    <p style="font-size:0.85rem; color:var(--text-muted); margin: 0.8rem 0 0; font-style:italic;">
-      <span class="en">☀️ Currently on summer holiday — back on the conference circuit in September!</span>
-      <span class="nl">☀️ Nu even op zomervakantie — in september weer op conferentie!</span>
-    </p>
 
     <!-- Past -->
     <span class="conf-section-title"><span class="en">Past presentations</span><span class="nl">Eerdere presentaties</span></span>
@@ -145,6 +141,11 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td>2026</td>
+          <td><div class="conf-name">ECPR General Conference</div></td>
+          <td class="conf-place">Kraków</td>
+        </tr>
         <tr>
           <td>2026</td>
           <td><div class="conf-name">EPSS</div></td>
@@ -297,9 +298,10 @@
   var icoStay     = makeIcon('#60a5fa');
 
   var conferences = [
-    // Upcoming 2026
-    { lat: 50.061, lng: 19.945, city: 'Kraków',     conf: 'ECPR General Conf. 2026',  type: 'upcoming' },
+    // Upcoming: research visit
+    { lat: 51.5115, lng: -0.116, city: 'London',    conf: "Research visit · King's College London", type: 'stay', upcoming: true },
     // Past 2026
+    { lat: 50.061, lng: 19.945, city: 'Kraków',     conf: 'ECPR General Conf. 2026',  type: 'past' },
     { lat: 57.719, lng: 10.616, city: 'Skagen',     conf: 'INTRAPARTY Workshop 2026', type: 'past' },
     { lat: 51.054, lng:  3.717, city: 'Gent',       conf: 'PoliticologenEtmaal 2026', type: 'past' },
     { lat: 54.597, lng: -5.930, city: 'Belfast',    conf: 'EPSS 2026',                type: 'past' },
@@ -325,7 +327,7 @@
 
   conferences.forEach(function (p) {
     var icon = p.type === 'upcoming' ? icoUpcoming : p.type === 'stay' ? icoStay : icoPast;
-    var badge = p.type === 'upcoming' ? '<div><span class="popup-upcoming">upcoming</span></div>' : '';
+    var badge = (p.type === 'upcoming' || p.upcoming) ? '<div><span class="popup-upcoming">upcoming</span></div>' : '';
     L.marker([p.lat, p.lng], { icon: icon })
       .bindPopup('<div class="popup-title">' + p.city + '</div><div class="popup-conf">' + p.conf + '</div>' + badge, { maxWidth: 200 })
       .addTo(map);
