@@ -102,33 +102,9 @@
     <div id="map"></div>
 
     <div class="map-legend">
-      <span><span class="legend-dot" style="background:#2d6a4f;"></span> <span class="en">upcoming 2026</span><span class="nl">komend 2026</span></span>
       <span><span class="legend-dot" style="background:#6b7280;"></span> <span class="en">past conference</span><span class="nl">eerdere conferentie</span></span>
       <span><span class="legend-dot" style="background:#60a5fa;"></span> <span class="en">research stay</span><span class="nl">onderzoeksverblijf</span></span>
     </div>
-
-    <!-- Upcoming: research visit -->
-    <span class="conf-section-title"><span class="en">Upcoming</span><span class="nl">Komend</span></span>
-    <table class="conf-table">
-      <thead>
-        <tr>
-          <th style="width:38%"><span class="en">Research visit</span><span class="nl">Onderzoeksverblijf</span></th>
-          <th><span class="en">Details</span><span class="nl">Details</span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <div class="conf-name">King's College London<span class="badge-upcoming"><span class="en">upcoming</span><span class="nl">komend</span></span></div>
-            <div class="conf-place">London · 26 Sep – 11 Oct 2026</div>
-          </td>
-          <td>
-            <span class="en">Hosted by Anne Rasmussen — collecting party statutes from party archives.</span>
-            <span class="nl">Op uitnodiging van Anne Rasmussen — verzamelen van partijstatuten in partijarchieven.</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
 
     <!-- Past -->
     <span class="conf-section-title"><span class="en">Past presentations</span><span class="nl">Eerdere presentaties</span></span>
@@ -141,6 +117,11 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td>2026</td>
+          <td><div class="conf-name">Research visit, King's College London</div></td>
+          <td class="conf-place">London</td>
+        </tr>
         <tr>
           <td>2026</td>
           <td><div class="conf-name">ECPR General Conference</div></td>
@@ -299,8 +280,8 @@
   var icoStay     = makeIcon('#60a5fa');
 
   var conferences = [
-    // Upcoming: research visit
-    { lat: 51.5115, lng: -0.116, city: 'London',    conf: "Research visit · King's College London", type: 'stay', upcoming: true },
+    // Research visit (Sep–Oct 2026)
+    { lat: 51.5115, lng: -0.116, city: 'London',    conf: "Research visit · King's College London 2026", type: 'stay' },
     // Past 2026
     { lat: 50.061, lng: 19.945, city: 'Kraków',     conf: 'ECPR General Conf. 2026',  type: 'past' },
     { lat: 57.719, lng: 10.616, city: 'Skagen',     conf: 'INTRAPARTY Workshop 2026', type: 'past' },
