@@ -27,6 +27,16 @@
       background: var(--green-pale); color: var(--green-dark);
     }
 
+    /* Photos */
+    .research-photo { margin: 1.5rem 0 0.4rem; max-width: 660px; }
+    .research-photo img { display: block; border-radius: 8px; }
+    .research-photo figcaption { font-size: 0.82rem; color: var(--text-light); margin-top: 0.5rem; line-height: 1.5; }
+    .photo-pair { display: flex; gap: 0.6rem; }
+    .photo-pair img { width: 100%; height: auto; min-width: 0; }
+    .photo-pair .landscape { flex: 1.3333 1 0; }
+    .photo-pair .portrait  { flex: 0.75 1 0; }
+    .photo-wide img { width: 100%; aspect-ratio: 2 / 1; object-fit: cover; object-position: center 45%; }
+
     /* Dissertation: text + cover side by side */
     .diss-layout {
       display: flex; gap: 2.5rem; align-items: flex-start; margin-top: 0.5rem;
@@ -118,8 +128,8 @@
   <div class="container">
     <div class="page-title"><span class="en">Research</span><span class="nl">Onderzoek</span></div>
     <p class="page-subtitle">
-      <span class="en">My research sits at the intersection of party politics, gender, and candidate selection.</span>
-      <span class="nl">Mijn onderzoek bevindt zich op het snijvlak van partijpolitiek, gender en kandidaatselectie.</span>
+      <span class="en">My research asks how inclusive political parties are: who gets to take part, who gets selected, and whose voice counts inside the party.</span>
+      <span class="nl">Mijn onderzoek gaat over hoe inclusief politieke partijen zijn: wie mag meedoen, wie wordt geselecteerd en wiens stem telt binnen de partij.</span>
     </p>
 
     <!-- INTRAPARTY -->
@@ -140,11 +150,16 @@
         <p>Binnen dit project bestudeer ik ook specifiek de rol van vrouwenorganisaties als interne belangengroep binnen politieke partijen: voor welke thema's pleiten ze en hoe is dit door de tijd heen veranderd?</p>
         <p>Een tweede paper ontwikkelt een <strong>Congress Power Index</strong> — een codeerinstrument dat meet hoeveel formele zeggenschap partijcongressen hebben binnen de partijorganisatie, gecodeerd op basis van historische partijstatuten met LLM-ondersteunde tekstanalyse.</p>
       </div>
-      <div class="tags" style="margin-top:1rem;">
-        <span class="tag party"><span class="en">Intraparty politics</span><span class="nl">Intrapartijpolitiek</span></span>
-        <span class="tag gender"><span class="en">Gender &amp; politics</span><span class="nl">Gender &amp; politiek</span></span>
-        <span class="tag party"><span class="en">Party organisations</span><span class="nl">Partijorganisaties</span></span>
-      </div>
+      <figure class="research-photo">
+        <div class="photo-pair">
+          <img class="landscape" src="images/national-liberal-club-2026.jpg" alt="Rozemarijn van Dijk in the archive of the National Liberal Club, London" loading="lazy">
+          <img class="portrait" src="images/lse-archive-2026.jpg" alt="Liberal Democrat conference newspapers on a reading-room desk in the LSE archive" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="en">Hunting for party statutes in the archives of the National Liberal Club and the LSE, London, during my research stay at King's College London (2026).</span>
+          <span class="nl">Op jacht naar partijstatuten in de archieven van de National Liberal Club en de LSE, Londen, tijdens mijn onderzoeksverblijf bij King's College London (2026).</span>
+        </figcaption>
+      </figure>
     </div>
 
     <!-- DISSERTATION -->
@@ -196,11 +211,6 @@
         </div>
       </div>
 
-      <div class="tags" style="margin-top:1.2rem;">
-        <span class="tag candidate"><span class="en">Candidate selection</span><span class="nl">Kandidaatselectie</span></span>
-        <span class="tag gender"><span class="en">Gender &amp; politics</span><span class="nl">Gender &amp; politiek</span></span>
-        <span class="tag electoral"><span class="en">Dutch politics</span><span class="nl">Nederlandse politiek</span></span>
-      </div>
     </div>
 
     <!-- OTHER PROJECTS -->
@@ -211,28 +221,27 @@
         <p>Beyond the INTRAPARTY project, I am involved in several collaborative research projects:</p>
         <ul>
           <li><strong>LGBTQ+ wings in political parties</strong> — how LGBTQ+ party organisations lobby for their issues and how their role has changed over time, with <a href="https://www.michalgrahn.com/" target="_blank">Michal Grahn</a> and <a href="https://sofiaammassari.com/" target="_blank">Sofia Ammassari</a>. More on the <a href="https://www.michalgrahn.com/wings-book" target="_blank">book project</a>.</li>
-          <li><strong>Violence against politicians</strong> — a factorial survey experiment on how learning about political violence affects citizens' political participation, with <a href="https://www.jmvanlit.nl/" target="_blank">Joep van Lit</a>. The paper is available as <a href="https://osf.io/phr9s_v1" target="_blank">pre-print 📝</a>.</li>
-          <li><strong>Voter perceptions of party unity and dividedness</strong> — are parties perceived as internally divided and are there electoral consequences, with <a href="https://www.rug.nl/staff/r.l.van.well/" target="_blank">Rick van Well</a>.</li>
+          <li><strong>Violence against politicians</strong> — a factorial survey experiment on how learning about political violence affects citizens' political participation, with <a href="https://www.jmvanlit.nl/" target="_blank">Joep van Lit</a>. The paper is accepted at <em>Political Behavior</em> (<a href="https://osf.io/phr9s_v1" target="_blank">pre-print 📝</a>).</li>
           <li><strong>Choosing not to join</strong> — why citizens choose not to join, or leave, a political party, using data from the Dutch Leiden Election Study, with <a href="https://www.rug.nl/staff/r.l.van.well/" target="_blank">Rick van Well</a>.</li>
-          <li><strong>Electoral systems and gender parity</strong> — examining how different electoral system designs affect the election of women, with Petra Meier and Petra Ahrens.</li>
+          <li><strong>Issue bricolage in the Pride movement</strong> — how Pride organisations combine LGBTQ+ claims with other political issues, with <a href="https://www.bastiaanredert.com/" target="_blank">Bastiaan Redert</a>.</li>
         </ul>
       </div>
       <div class="nl">
         <p>Naast het INTRAPARTY-project ben ik betrokken bij meerdere collaboratieve onderzoeksprojecten:</p>
         <ul>
           <li><strong>LGBTQ+-vleugels in politieke partijen</strong> — hoe LGBTQ+-partijorganisaties lobbyen voor hun thema's en hoe hun rol door de tijd is veranderd, samen met <a href="https://www.michalgrahn.com/" target="_blank">Michal Grahn</a> en <a href="https://sofiaammassari.com/" target="_blank">Sofia Ammassari</a>. Meer over het <a href="https://www.michalgrahn.com/wings-book" target="_blank">boekproject</a>.</li>
-          <li><strong>Geweld tegen politici</strong> — een factorieel surveyexperiment over hoe informatie over politiek geweld burgers' politieke participatie beïnvloedt, samen met <a href="https://www.jmvanlit.nl/" target="_blank">Joep van Lit</a>. Het paper is beschikbaar als <a href="https://osf.io/phr9s_v1" target="_blank">pre-print 📝</a>.</li>
-          <li><strong>Kiezerspercepties van partijuniteit en verdeeldheid</strong> — worden partijen als intern verdeeld ervaren en zijn er electorale gevolgen, samen met <a href="https://www.rug.nl/staff/r.l.van.well/" target="_blank">Rick van Well</a>.</li>
+          <li><strong>Geweld tegen politici</strong> — een factorieel surveyexperiment over hoe informatie over politiek geweld burgers' politieke participatie beïnvloedt, samen met <a href="https://www.jmvanlit.nl/" target="_blank">Joep van Lit</a>. Het paper is geaccepteerd bij <em>Political Behavior</em> (<a href="https://osf.io/phr9s_v1" target="_blank">pre-print 📝</a>).</li>
           <li><strong>Kiezen om geen lid te worden</strong> — waarom burgers ervoor kiezen geen lid te worden van, of te stoppen bij, een politieke partij, op basis van data uit het Leidse Verkiezingsonderzoek, samen met <a href="https://www.rug.nl/staff/r.l.van.well/" target="_blank">Rick van Well</a>.</li>
-          <li><strong>Kiesstelsel en genderpariteit</strong> — hoe beïnvloeden verschillende kiesstelsels de verkiezing van vrouwen, samen met Petra Meier en Petra Ahrens.</li>
+          <li><strong>Issue bricolage in de Pride-beweging</strong> — hoe Pride-organisaties LGBTQ+-claims combineren met andere politieke thema's, samen met <a href="https://www.bastiaanredert.com/" target="_blank">Bastiaan Redert</a>.</li>
         </ul>
       </div>
-      <div class="tags" style="margin-top:1rem;">
-        <span class="tag gender"><span class="en">Gender &amp; politics</span><span class="nl">Gender &amp; politiek</span></span>
-        <span class="tag candidate"><span class="en">Candidate selection</span><span class="nl">Kandidaatselectie</span></span>
-        <span class="tag violence"><span class="en">Political violence</span><span class="nl">Politiek geweld</span></span>
-        <span class="tag electoral"><span class="en">Electoral systems</span><span class="nl">Kiesstelsel</span></span>
-      </div>
+      <figure class="research-photo photo-wide">
+        <img src="images/visiblequeers-mainz-2026.jpg" alt="Rozemarijn van Dijk presenting the Rainbow wings book project at the VisibleQueers workshop in Mainz" loading="lazy">
+        <figcaption>
+          <span class="en">Presenting our book project <em>Rainbow wings</em> at the VisibleQueers workshop in Mainz (November 2026).</span>
+          <span class="nl">Presentatie van ons boekproject <em>Rainbow wings</em> op de VisibleQueers-workshop in Mainz (november 2026).</span>
+        </figcaption>
+      </figure>
     </div>
 
 

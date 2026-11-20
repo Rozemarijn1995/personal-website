@@ -95,8 +95,8 @@
   <div class="container">
     <div class="page-title"><span class="en">On the road</span><span class="nl">Onderweg</span></div>
     <p class="page-subtitle">
-      <span class="en">A map of every conference city I've presented at — and where I'm heading next.</span>
-      <span class="nl">Een kaart van alle conferentiesteden waar ik heb gepresenteerd — en waar ik naartoe ga.</span>
+      <span class="en">A map of every conference city I've presented at. Already looking forward to 2027.</span>
+      <span class="nl">Een kaart van alle conferentiesteden waar ik heb gepresenteerd. Ik kijk nu alweer uit naar 2027.</span>
     </p>
 
     <div id="map"></div>
@@ -119,8 +119,8 @@
       <tbody>
         <tr>
           <td>2026</td>
-          <td><div class="conf-name">Research visit, King's College London</div></td>
-          <td class="conf-place">London</td>
+          <td><div class="conf-name">VisibleQueers Workshop</div></td>
+          <td class="conf-place">Mainz</td>
         </tr>
         <tr>
           <td>2026</td>
@@ -240,6 +240,10 @@
       </thead>
       <tbody>
         <tr>
+          <td>2026</td>
+          <td><div class="conf-name">King's College London</div></td>
+        </tr>
+        <tr>
           <td>2024</td>
           <td><div class="conf-name"><span class="en">University of Amsterdam</span><span class="nl">Universiteit van Amsterdam</span></div></td>
         </tr>
@@ -280,9 +284,8 @@
   var icoStay     = makeIcon('#60a5fa');
 
   var conferences = [
-    // Research visit (Sep–Oct 2026)
-    { lat: 51.5115, lng: -0.116, city: 'London',    conf: "Research visit · King's College London 2026", type: 'stay' },
     // Past 2026
+    { lat: 49.993, lng:  8.247, city: 'Mainz',      conf: 'VisibleQueers Workshop 2026', type: 'past' },
     { lat: 50.061, lng: 19.945, city: 'Kraków',     conf: 'ECPR General Conf. 2026',  type: 'past' },
     { lat: 57.719, lng: 10.616, city: 'Skagen',     conf: 'INTRAPARTY Workshop 2026', type: 'past' },
     { lat: 51.054, lng:  3.717, city: 'Gent',       conf: 'PoliticologenEtmaal 2026', type: 'past' },
@@ -303,6 +306,7 @@
     { lat: 51.222, lng:  6.776, city: 'Düsseldorf', conf: 'Graduate Conf. on Party Research 2019', type: 'past' },
     { lat: 52.160, lng:  4.497, city: 'Leiden',     conf: 'PoliticologenEtmaal 2017', type: 'past' },
     // Research stays
+    { lat: 51.5115, lng: -0.116, city: 'London',    conf: "Research stay · King's College London 2026", type: 'stay' },
     { lat: 52.368, lng:  4.904, city: 'Amsterdam',  conf: 'Research stay 2024',      type: 'stay' },
     { lat: 55.676, lng: 12.568, city: 'Copenhagen', conf: 'Research stay 2023',      type: 'stay' },
   ];
